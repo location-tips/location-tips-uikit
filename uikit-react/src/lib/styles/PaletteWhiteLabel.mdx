@@ -1,0 +1,36 @@
+import { Canvas, Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+import "./brand/whitelabel.css"
+
+import palette from "./Palette"
+
+<Meta title="Design System/Palette/White Label" />
+
+{
+    document.getElementsByTagName("html")[0].dataset.brand = "white-label"
+}
+
+# White label palette
+
+Palette for white label uikit design system
+
+<Canvas>
+    <ColorPalette>
+    {
+    Object.entries(palette.whiteLabel.palette).map((token, i) => {
+        return(
+            <ColorItem
+                key={i}
+                title={`${token[0]} color`}
+                colors={
+                    Object.entries(token[1]).map((value) => {
+                        return `var(${value[1].cssVar})`
+                    })
+                }
+            />
+            )
+        })
+    }
+    </ColorPalette>
+
+</Canvas>

@@ -1,0 +1,215 @@
+{
+  "name": "iOS",
+  "variables": [
+    {
+      "name": "layout/screen/padding/horizontal",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:273"
+      },
+      "cssVar": "--layout-screen-padding-horizontal",
+      "cssValue": "var(--whiteSpace-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/primary/medium/whiteSpace/padding/horizontal",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:273"
+      },
+      "cssVar": "--button-primary-medium-whiteSpace-padding-horizontal",
+      "cssValue": "var(--whiteSpace-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/primary/medium/whiteSpace/padding/vertical",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:272"
+      },
+      "cssVar": "--button-primary-medium-whiteSpace-padding-vertical",
+      "cssValue": "var(--whiteSpace-general-1_5x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/primary/medium/whiteSpace/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--button-primary-medium-whiteSpace-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/primary/medium/borderRadius/default",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:614:1425"
+      },
+      "cssVar": "--button-primary-medium-borderRadius-default",
+      "cssValue": "var(--borderRadius-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/secondary/medium/whiteSpace/padding/horizontal",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:273"
+      },
+      "cssVar": "--button-secondary-medium-whiteSpace-padding-horizontal",
+      "cssValue": "var(--whiteSpace-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/secondary/medium/whiteSpace/padding/vertical",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:272"
+      },
+      "cssVar": "--button-secondary-medium-whiteSpace-padding-vertical",
+      "cssValue": "var(--whiteSpace-general-1_5x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/secondary/medium/whiteSpace/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--button-secondary-medium-whiteSpace-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/secondary/medium/borderRadius/default",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:614:1425"
+      },
+      "cssVar": "--button-secondary-medium-borderRadius-default",
+      "cssValue": "var(--borderRadius-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/outlined/medium/whiteSpace/padding/horizontal",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:273"
+      },
+      "cssVar": "--button-outlined-medium-whiteSpace-padding-horizontal",
+      "cssValue": "var(--whiteSpace-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/outlined/medium/whiteSpace/padding/vertical",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:272"
+      },
+      "cssVar": "--button-outlined-medium-whiteSpace-padding-vertical",
+      "cssValue": "var(--whiteSpace-general-1_5x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/outlined/medium/whiteSpace/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--button-outlined-medium-whiteSpace-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/outlined/medium/borderRadius/default",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:614:1425"
+      },
+      "cssVar": "--button-outlined-medium-borderRadius-default",
+      "cssValue": "var(--borderRadius-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "button/transparent/medium/whiteSpace/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--button-transparent-medium-whiteSpace-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/field/padding/horizontal",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:273"
+      },
+      "cssVar": "--input-field-whiteSpace-field-padding-horizontal",
+      "cssValue": "var(--whiteSpace-general-2x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/field/padding/vertical",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:272"
+      },
+      "cssVar": "--input-field-whiteSpace-field-padding-vertical",
+      "cssValue": "var(--whiteSpace-general-1_5x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/field/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--input-field-whiteSpace-field-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/label/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--input-field-whiteSpace-label-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/caption/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--input-field-whiteSpace-caption-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/whiteSpace/assistive/gap",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:221:271"
+      },
+      "cssVar": "--input-field-whiteSpace-assistive-gap",
+      "cssValue": "var(--whiteSpace-general-1x)",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "input/field/borderRadius/default",
+      "value": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:614:1425"
+      },
+      "cssVar": "--input-field-borderRadius-default",
+      "cssValue": "var(--borderRadius-general-2x)",
+      "resolvedType": "FLOAT"
+    }
+  ]
+}

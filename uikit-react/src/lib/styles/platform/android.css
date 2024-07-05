@@ -1,0 +1,23 @@
+:root[data-platform="android"] {
+	--layout-screen-padding-horizontal: var(--whiteSpace-general-2x);
+	--button-primary-medium-whiteSpace-padding-horizontal: var(--whiteSpace-general-2x);
+	--button-primary-medium-whiteSpace-padding-vertical: var(--whiteSpace-general-1_5x);
+	--button-primary-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
+	--button-primary-medium-borderRadius-default: var(--borderRadius-general-2x);
+	--button-secondary-medium-whiteSpace-padding-horizontal: var(--whiteSpace-general-2x);
+	--button-secondary-medium-whiteSpace-padding-vertical: var(--whiteSpace-general-1_5x);
+	--button-secondary-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
+	--button-secondary-medium-borderRadius-default: var(--borderRadius-general-2x);
+	--button-outlined-medium-whiteSpace-padding-horizontal: var(--whiteSpace-general-2x);
+	--button-outlined-medium-whiteSpace-padding-vertical: var(--whiteSpace-general-1_5x);
+	--button-outlined-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
+	--button-outlined-medium-borderRadius-default: var(--borderRadius-general-2x);
+	--button-transparent-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
+	--input-field-whiteSpace-field-padding-horizontal: var(--whiteSpace-general-2x);
+	--input-field-whiteSpace-field-padding-vertical: var(--whiteSpace-general-1_5x);
+	--input-field-whiteSpace-field-gap: var(--whiteSpace-general-1x);
+	--input-field-whiteSpace-label-gap: var(--whiteSpace-general-1x);
+	--input-field-whiteSpace-caption-gap: var(--whiteSpace-general-1x);
+	--input-field-whiteSpace-assistive-gap: var(--whiteSpace-general-1x);
+	--input-field-borderRadius-default: var(--borderRadius-general-2x);
+}

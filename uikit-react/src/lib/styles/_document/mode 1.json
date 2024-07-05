@@ -1,0 +1,41 @@
+{
+  "name": "Mode 1",
+  "variables": [
+    {
+      "name": "annotation",
+      "value": {
+        "r": 0.5921568870544434,
+        "g": 0.27843138575553894,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--annotation",
+      "cssValue": "rgba(151.00000619888306, 71.00000336766243, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "black",
+      "value": {
+        "r": 0.0013025919906795025,
+        "g": 0.0013025919906795025,
+        "b": 0.0013025919906795025,
+        "a": 1
+      },
+      "cssVar": "--black",
+      "cssValue": "rgba(0.33216095762327313, 0.33216095762327313, 0.33216095762327313, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "white",
+      "value": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--white",
+      "cssValue": "rgba(255, 255, 255, 1)",
+      "resolvedType": "COLOR"
+    }
+  ]
+}

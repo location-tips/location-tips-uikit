@@ -1,0 +1,11 @@
+.fieldDescription {
+    color: var(--input-text-field-enabled-assistive-font-color);
+}
+
+.fieldDescription.valid {
+    color: var(--input-text-field-valid-assistive-font-color);
+}
+
+.fieldDescription.invalid {
+    color: var(--input-text-field-invalid-assistive-font-color, #dc2020);
+}

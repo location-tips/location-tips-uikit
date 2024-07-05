@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "outDir": ""
+  },
+  "files": [
+    "node_modules/@nx/react/typings/styled-jsx.d.ts",
+    "node_modules/@nx/react/typings/cssmodule.d.ts",
+    "node_modules/@nx/react/typings/image.d.ts"
+  ],
+  "include": [
+    "uikit-react/stc/lib/**/**/*.stories.ts",
+    "uikit-react/stc/lib/**/**/*.stories.js",
+    "uikit-react/stc/lib/**/**/*.stories.jsx",
+    "uikit-react/stc/lib/**/**/*.stories.tsx",
+    "uikit-react/stc/lib/**/**/*.stories.mdx",
+    "uikit-react/.storybook/*.js",
+    "uikit-react/.storybook/*.ts"
+  ]
+}

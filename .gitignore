@@ -1,0 +1,10 @@
+.angular/
+.nx/
+.firebase/
+uikit-figma/.next/
+node_modules/
+*/node_modules/
+.npm
+dist/
+.DS_Store
+.idea/

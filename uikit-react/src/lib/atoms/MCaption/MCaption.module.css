@@ -1,0 +1,8 @@
+/** TODO: use variables */
+.caption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--input-field-whiteSpace-label-gap, 8px);
+}

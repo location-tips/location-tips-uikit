@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": [
+      "vite/client",
+      "jest",
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts",
+      "@types/jest"
+    ],
+    "paths": {
+      "uikit-react": ["./index.ts"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.storybook.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "../tsconfig.base.json",
+}

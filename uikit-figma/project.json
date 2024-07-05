@@ -1,0 +1,58 @@
+{
+  "name": "uikit-figma",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "uikit-figma",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/uikit-figma"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "uikit-figma"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "uikit-figma:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "uikit-figma:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "uikit-figma:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "uikit-figma:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "uikit-figma/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}

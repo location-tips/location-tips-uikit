@@ -1,0 +1,82 @@
+{
+  "name": "uikit-react",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "uikit-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "uikit-react/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/uikit-react",
+        "configDir": "uikit-react/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "uikit-react/jest.config.ts"
+      }
+    },
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "main": "uikit-react/src/lib/index.react.ts",
+        "outputPath": "dist/uikit-react",
+        "tsConfig": "uikit-react/tsconfig.lib.json",
+        "generateExportsField": false,
+        "compiler": "babel",
+        "project": "uikit-react/package.json",
+        "extractCss": false,
+        "format": ["esm"],
+        "external": ["core-js", "react", "react-dom", "react/jsx-runtime"],
+        "assets": [
+          {
+            "glob": "uikit-react/README.md",
+            "input": ".",
+            "output": "."
+          },
+          {
+            "glob": "uikit-react/src/lib/styles",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    }
+  }
+}

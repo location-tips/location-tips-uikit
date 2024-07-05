@@ -1,0 +1,84 @@
+default:
+  image: node:20-alpine
+
+cache:
+  paths:
+    - node_modules/
+
+.assume_role: &assume_role
+  - >
+    STS=($(aws sts assume-role-with-web-identity
+    --role-arn ${ROLE_ARN}
+    --role-session-name "GitLabRunner-${CI_PROJECT_ID}-${CI_PIPELINE_ID}"
+    --web-identity-token $ID_TOKEN
+    --duration-seconds 3600
+    --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]'
+    --output text))
+  - export AWS_ACCESS_KEY_ID="${STS[0]}"
+  - export AWS_SECRET_ACCESS_KEY="${STS[1]}"
+  - export AWS_SESSION_TOKEN="${STS[2]}"
+
+.run-on-main-branch:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+.run-on-pr-and-push:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"  || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+stages:
+  - install_deps
+  - lint
+  - tests
+  - build
+  - deploy
+
+install_deps:
+  extends:
+    - .run-on-pr-and-push
+  stage: install_deps
+  script:
+    - npm install
+
+lint:
+  stage: lint
+  extends:
+    - .run-on-pr-and-push
+  script:
+    - echo "Here we should rome some linting!"
+#    - npm run lint
+
+tests:
+  stage: tests
+  extends:
+    - .run-on-pr-and-push
+  script:
+    - echo "Run component library tests"
+    - npm run test
+
+build storybook:
+  stage: build
+  extends:
+    - .run-on-pr-and-push
+  script:
+    - npm run build:storybook
+  environment: production
+  artifacts:
+    paths:
+      - dist/storybook
+    when: on_success
+
+deploy storybook to s3:
+  extends:
+    - .run-on-main-branch
+  stage: deploy
+  image:
+    name: amazon/aws-cli:latest
+    entrypoint:
+      - '/usr/bin/env'
+  id_tokens:
+    ID_TOKEN:
+      aud: $AWS_AUDIENCE
+  script:
+    - *assume_role
+    - aws s3 sync dist/storybook s3://$S3_BUCKET

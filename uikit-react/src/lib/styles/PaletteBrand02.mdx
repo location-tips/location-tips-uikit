@@ -1,0 +1,36 @@
+import { Canvas, Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+import "./brand/brand02.css"
+
+import palette from "./Palette"
+
+<Meta title="Design System/Palette/Brand 02" />
+
+{
+    document.getElementsByTagName("html")[0].dataset.brand = "brand02"
+}
+
+# Brand02 palette
+
+Palette for brand02 uikit design system
+
+<Canvas>
+    <ColorPalette>
+    {
+    Object.entries(palette.brand02.palette).map((token, i) => {
+        return(
+            <ColorItem
+                key={i}
+                title={`${token[0]} color`}
+                colors={
+                    Object.entries(token[1]).map((value) => {
+                        return `var(${value[1].cssVar})`
+                    })
+                }
+            />
+            )
+        })
+    }
+    </ColorPalette>
+
+</Canvas>
