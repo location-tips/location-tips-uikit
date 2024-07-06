@@ -3,7 +3,7 @@ import {withoutVitePlugins} from "@storybook/builder-vite";
 import svgr from 'vite-plugin-svgr'
 
 const config: StorybookConfig = {
-    stories: ['../src/lib/**/**/*.@(stories.@(js|jsx|ts|tsx))'],
+    stories: ['../src/**/**/*.@(stories.@(js|jsx|ts|tsx))'],
 
     addons: [
         "@storybook/addon-essentials",

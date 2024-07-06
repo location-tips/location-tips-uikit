@@ -9,7 +9,6 @@
 ## <a name="result"></a>Result
 
 - https://dk4dkhcaucc0a.cloudfront.net/uikit-react/
-- https://dk4dkhcaucc0a.cloudfront.net/uikit-angular/
 
 ## <a name="structure"></a>Structure
 
@@ -27,10 +26,6 @@ Main folder splitted to:
 - `fonts` fonts for brands
 - `types` typescript types
 - `utils` any useful functions 
-
-### uikit-angular
-
-Folder contains configs for angular uikit and storybook config for angular uikit
 
 ### uikit-react
 
@@ -60,20 +55,16 @@ npm install
 
 - React library
 ```
-npm run build:react
-```
-- Angular library
-```
-npm run build:angular
+nx run uikit-react:build
 ```
 
 ### Test
 
-``Nothing to say yet``
+``Yet nothing to say``
 
 ### Deploy
 
-``Nothing to say yet``
+``Yest nothing to say``
 
 ## <a name="storybook"></a>Storybook
 
@@ -81,22 +72,14 @@ npm run build:angular
 
 - Run storybook for react
 ```
-npm run storybook:react
-```
-- Run storybook for angular
-```
-npm run storybook:angular
+nx run uikit-react:storybook
 ```
 
 ### Build
 
 - Run storybook for react
 ```
-npm run storybook:react:build
-```
-- Run storybook for angular
-```
-npm run storybook:angular:build
+nx run uikit-react:build-storybook
 ```
 
 ### Deploy
@@ -120,11 +103,6 @@ npm run test
 - React tests
 ```
 nx run uikit-react:test
-```
-
-- Angular tests
-```
-nx run uikit-angular:test
 ```
 
 ### Cache

@@ -4,7 +4,7 @@
     "outDir": "../dist/out-tsc",
     "module": "commonjs",
     "esModuleInterop": true,
-    "rootDir": "uikit",
+    "rootDir": ".",
     "declaration": true,
     "types": [
       "jest", 
@@ -15,8 +15,9 @@
   },
   "include": [
     "jest.config.ts",
-    "../uikit/**/_react/*.test.ts",
-    "../uikit/**/_react/*.spec.ts",
-    "../uikit/**/_react/*.d.ts"
+    "uikit-react/src/*.test.ts",
+    "uikit-react/src/*.test.tsx",
+    "uikit-react/src/*.spec.ts",
+    "uikit-react/src/*.d.ts"
   ]
 }

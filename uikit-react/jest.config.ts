@@ -2,17 +2,17 @@
 export default {
   displayName: 'uikit-react',
   coverageDirectory: '../coverage/uikit-react',
-  rootDir: '../uikit',
-  testMatch: ['<rootDir>/**/_react/?(*.)+(spec|test).[jt]s?(x)'],
+  rootDir: '../uikit-react',
+  testMatch: ['<rootDir>/**/?(*.)+(spec|test).ts?(x)'],
   resolver: '@nx/jest/plugins/resolver',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'mjs', 'html'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
   transform: {
       '^.+\\.(ts|tsx|js|html)$': [
           'ts-jest',
           { tsconfig: '<rootDir>/../uikit-react/tsconfig.spec.json' },
       ],
-      "^.+\\.css$": "<rootDir>/../__mocks__/cssTransform.js",
-      "^(?!.*\\.(js|jsx|css|scss|json)$)": "<rootDir>/../__mocks__/fileTransform.js"
+      "^.+\\.css$": "<rootDir>/../__mocks__/cssTransform.cjs",
+      "^(?!.*\\.(js|jsx|css|scss|json)$)": "<rootDir>/../__mocks__/fileTransform.cjs"
   },
   transformIgnorePatterns: [
     "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$",

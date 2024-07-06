@@ -6,5 +6,6 @@ node_modules/
 */node_modules/
 .npm
 dist/
+dist-storybook/
 .DS_Store
 .idea/

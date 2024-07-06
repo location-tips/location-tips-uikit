@@ -18,7 +18,6 @@
     "paths": {
       "@nx/react": ["@nx/react/src/index.ts"],
       "uikit-react": ["uikit-react/index.ts"],
-      "@uikit/*": ["uikit-react/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

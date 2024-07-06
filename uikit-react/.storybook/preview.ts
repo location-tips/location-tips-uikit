@@ -1,4 +1,4 @@
-import "../src/lib/styles/index.css"
+import "../src/styles/index.css"
 
 export const parameters = {
     rootAttributes: [

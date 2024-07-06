@@ -6,23 +6,6 @@ import * as path from 'path';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { libInjectCss } from 'vite-plugin-lib-inject-css'
 import svgr from 'vite-plugin-svgr';
-import { fileURLToPath } from 'node:url'
-import { glob } from 'glob'
-
-const entities = {};
-
-glob.sync(['uikit-react/index.ts', 'uikit-react/src/lib/**/*.{ts,tsx}'], {
-  ignore: ['uikit-react/src/lib/**/*.stories.{ts,tsx}', 'uikit-react/src/lib/**/*.test.{ts,tsx}', 'uikit-react/src/lib/**/*.d.ts'],
-}).forEach(file => { 
-  // console.log('File:', file);
-  const relativePath = file.replace(/.*uikit-react\//, '');
-  const f = fileURLToPath(new URL(relativePath, import.meta.url));
-  const alias = relativePath;
-
-  entities[alias] = [f];
-});
-
-console.log('Entities:', entities);
 
 export default defineConfig({
   root: __dirname,
@@ -35,24 +18,18 @@ export default defineConfig({
     libInjectCss(),
     dts({
       tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.json'),
+      outputDir: path.join(__dirname, '../dist'),
       insertTypesEntry: true,
-      rollupTypes: true,
+      include: ['../uikit-react/src/**/*'],
     }),
   ],
 
-  resolve: {
-    alias: {
-      '@uikit': path.resolve(__dirname, './src/lib'),
-    },
-  },
-
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
+  // resolve: {
+  //   alias: {
+  //     '@uikit': path.resolve(__dirname, './src'),
+  //   },
   // },
 
-  // Configuration for building your library.
-  // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
     outDir: '../dist',
     reportCompressedSize: true,
@@ -60,29 +37,29 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
     lib: {
-      // Could also be a dictionary or array of multiple entry points.
-      // entry: './src/lib/index.ts',
-      entry: entities,
-      name: 'uikit-react',
-      fileName: (format) => `index.${format}.js`,
-      // Change this to the formats you want to support.
-      // Don't forget to update your package.json as well.
-      formats: ["es", "cjs"],
+      entry: './src/index.ts',
+      // name: 'uikit-react',
+      // fileName: (format) => `index.${format}.js`,
+      // fileName: (format, entryName) => entryName.replace('uikit-react/src/', ''),
+      formats: ["es"],
     },
     target: 'esnext',
+    emptyOutDir: true,
     rollupOptions: {
-      // External packages that should not be bundled into your library.
       external: ['react', 'react-dom', 'react/jsx-runtime', 'clsx'],
-      input: Object.keys(entities),
       output: {
-        assetFileNames: 'assets/[name][extname]',
-        entryFileNames: '[name].js',
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+        // assetFileNames: '[name][extname]',
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.includes('module.css')) return assetInfo.name.replace('module.css', 'css').replace('uikit-react/src/', '');
+          return assetInfo.name?.replace('uikit-react/src/', '') ?? '[name].[ext]';
         },
+        chunkFileNames: (chunkInfo) => `${chunkInfo.name?.replace('uikit-react/src/', '') ?? '[name]'}.js`,
+        entryFileNames: (chunkInfo) => `${chunkInfo.name?.replace('uikit-react/src/', '') ?? '[name]'}.js`,
+        // globals: {
+        //   "react": "React",
+        //   "react-dom": "ReactDOM",
+        // },
         preserveModules: true,
-        // preserveModulesRoot: '.',
       }
     },
   },

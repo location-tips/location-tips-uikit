@@ -25,7 +25,7 @@
       "executor": "@nx/storybook:build",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "outputDir": "dist/storybook/uikit-react",
+        "outputDir": "dist-storybook",
         "configDir": "uikit-react/.storybook"
       },
       "configurations": {

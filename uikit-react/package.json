@@ -1,11 +1,13 @@
 {
-  "name": "@mobiquity/uikit-react",
+  "name": "location-tips-uikit",
   "version": "0.0.1",
   "main": "./index.js",
   "type": "module",
   "peerDependencies": {
     "clsx": "^2.1.0",
-    "core-js": "3.36.0"
+    "core-js": "3.36.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "build": "vite build"
@@ -15,8 +17,8 @@
   ],
   "exports": {
     "./package.json": "./package.json",
-    "./styles/index.css": "./styles/index.css",
-    ".": "./index.esm.js"
+    "./index.css": "./index.css",
+    ".": "./"
   },
   "prepublishOnly": "npm run build"
 }
