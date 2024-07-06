@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "build:react": "nx run uikit-react:build",
-    "build:storybook": "npm run storybook:angular:build && npm run storybook:react:build",
-    "storybook:react": "nx run uikit-react:storybook",
-    "storybook:react:build": "nx run uikit-react:build-storybook",
-    "test:react": "nx run uikit-react:test",
-    "test": "npm run test:angular && npm run test:react",
+    "build:storybook": "nx run uikit-react:build-storybook",
+    "storybook": "nx run uikit-react:storybook",
+    "test": "nx run uikit-react:test",
     "prepare": "husky"
   },
   "private": true,

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import MListItem from './MListItem';
-import MFlex from '../../MFlex/MFlex';
-import MIcon from '../../MIcon/MIcon';
-import MText from '../../MText/MText';
+import MFlex from '../MFlex/MFlex';
+import MIcon from '../MIcon/MIcon';
+import MText from '../MText/MText';
 import React from 'react';
 
 const meta: Meta<typeof MListItem> = {

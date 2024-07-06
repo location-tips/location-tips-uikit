@@ -9,7 +9,7 @@ import ReactDOMServer from 'react-dom/server';
 import MDropdown from '../MDropdown/MDropdown';
 import MIcon from '../MIcon/MIcon';
 import MList from '../MList/MList';
-import { ListItemProps } from '../MListItem/MListItem/MListItem';
+import { ListItemProps } from '../MListItem/MListItem';
 import { MButton } from '../MButton/MButton';
 
 type SelectOption = ListItemProps & {

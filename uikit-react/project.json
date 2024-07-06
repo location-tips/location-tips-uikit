@@ -42,40 +42,10 @@
       }
     },
     "build": {
-      "executor": "@nx/rollup:rollup",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
+      "executor": "@nx/vite:build",
       "options": {
-        "main": "uikit-react/src/lib/index.react.ts",
-        "outputPath": "dist/uikit-react",
-        "tsConfig": "uikit-react/tsconfig.lib.json",
-        "generateExportsField": false,
-        "compiler": "babel",
-        "project": "uikit-react/package.json",
-        "extractCss": false,
-        "format": ["esm"],
-        "external": ["core-js", "react", "react-dom", "react/jsx-runtime"],
-        "assets": [
-          {
-            "glob": "uikit-react/README.md",
-            "input": ".",
-            "output": "."
-          },
-          {
-            "glob": "uikit-react/src/lib/styles",
-            "input": ".",
-            "output": "."
-          }
-        ]
-      },
-      "configurations": {
-        "production": {
-          "optimization": true,
-          "sourceMap": false,
-          "namedChunks": false,
-          "extractLicenses": true,
-          "vendorChunk": false
-        }
+          "configFile": "uikit-react/vite.config.ts",
+          "outputPath": "dist"
       }
     }
   }

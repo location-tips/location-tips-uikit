@@ -21,7 +21,7 @@ type CardProps = DetailedHTMLProps<
   collapsed?: boolean;
 };
 
-const MCard = ({
+export const MCard = ({
                  header,
                  footer,
                  className,

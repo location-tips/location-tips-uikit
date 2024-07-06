@@ -2,11 +2,13 @@
   "name": "@mobiquity/uikit-react",
   "version": "0.0.1",
   "main": "./index.js",
-  "types": "./index.d.ts",
   "type": "module",
   "peerDependencies": {
     "clsx": "^2.1.0",
     "core-js": "3.36.0"
+  },
+  "scripts": {
+    "build": "vite build"
   },
   "sideEffects": [
     "**/*.css"
