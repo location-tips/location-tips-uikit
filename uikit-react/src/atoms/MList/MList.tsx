@@ -17,9 +17,10 @@ type ListComponentProps = {
 export const MList = ({ options = [], showDivider, onChoose }: ListComponentProps) => {
   return (
     <ul className={styles.listItems}>
-      {options.map((option) => (
+      {options.map(({key, ...option}) => (
         <MListItem
-          onClick={() => onChoose?.(option)}
+          key={key}
+          onClick={() => onChoose?.({key, ...option})}
           {...option}
           showDivider={showDivider}
         >

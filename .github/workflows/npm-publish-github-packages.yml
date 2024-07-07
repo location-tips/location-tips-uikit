@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm run build:react
+      - run: npm i
+      - run: npm run build
       - run: cd dist
       - run: npm publish
         env:

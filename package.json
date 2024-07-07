@@ -1,10 +1,10 @@
 {
   "name": "location-tips-uikit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build:react": "nx run uikit-react:build && node uikit-react/postbuild.js",
+    "build": "nx run uikit-react:build && node uikit-react/postbuild.js",
     "build:storybook": "nx run uikit-react:build-storybook",
     "storybook": "nx run uikit-react:storybook",
     "test": "nx run uikit-react:test",
@@ -43,8 +43,6 @@
     "@storybook/core-server": "^8.1.11",
     "@storybook/react-vite": "^8.1.11",
     "@svgr/rollup": "^8.0.1",
-    "@swc-node/register": "~1.6.7",
-    "@swc/core": "~1.3.85",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
