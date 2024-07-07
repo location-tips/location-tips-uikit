@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import * as glob from 'glob';
-// import mv from 'mv';
 
+console.log('Aggregating CSS files into index.css');
 const distPath = path.join(import.meta.dirname, '../dist');
 const cssFiles = glob.sync('**/*.css', { cwd: distPath });
 
