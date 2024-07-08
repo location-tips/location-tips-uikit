@@ -1,10 +1,11 @@
 {
-  "name": "location-tips-uikit",
+  "name": "location-tips",
   "version": "0.0.5",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "nx run uikit-react:build && node uikit-react/postbuild.js",
+    "build": "./build-uikit.sh",
+    "build:vite": "nx run uikit-react:build && node uikit-react/postbuild.js",
     "build:storybook": "nx run uikit-react:build-storybook",
     "storybook": "nx run uikit-react:storybook",
     "test": "nx run uikit-react:test",
@@ -74,14 +75,14 @@
     "vite-plugin-lib-inject-css": "^2.1.1"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.18.0",
-    "@nx/nx-linux-x64-gnu": "19.4.1"
+    "@nx/nx-linux-x64-gnu": "19.4.1",
+    "@rollup/rollup-linux-x64-gnu": "4.18.0"
   },
   "workspaces": [
-    "packages/*"
+    "uikit-react/*"
   ],
   "lint-staged": {
-    "uikit/**/*": "prettier --write --ignore-unknown"
+    "uikit-react/**/*": "prettier --write --ignore-unknown"
   },
   "types": "global-types.d.ts"
 }

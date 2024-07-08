@@ -33,6 +33,7 @@ jobs:
       - run: npm ci --include=optional
       - run: npm run build
       - run: cd dist
+      - run: ls
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_DEPLOY_SECRET_KEY}}

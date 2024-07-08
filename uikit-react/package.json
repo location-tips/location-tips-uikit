@@ -1,13 +1,13 @@
 {
-  "name": "location-tips-uikit",
-  "version": "0.0.1",
+  "name": "@location-tips/location-tips-uikit",
+  "version": "0.0.6",
   "main": "./index.js",
   "type": "module",
   "peerDependencies": {
     "clsx": "^2.1.0",
-    "core-js": "3.36.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "~5.2.2"
   },
   "scripts": {
     "build": "vite build"
@@ -19,6 +19,5 @@
     "./package.json": "./package.json",
     "./index.css": "./index.css",
     ".": "./"
-  },
-  "prepublishOnly": "npm run build"
+  }
 }
