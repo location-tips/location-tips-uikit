@@ -1,7 +1,7 @@
 {
   "name": "@location-tips/location-tips-uikit",
   "version": "0.0.6",
-  "main": "./index.js",
+  "main": "./index.ts",
   "type": "module",
   "peerDependencies": {
     "clsx": "^2.1.0",
@@ -18,8 +18,10 @@
   ],
   "exports": {
     "./package.json": "./package.json",
-    "./index.css": "./index.css",
-    ".": "./"
+    "./index.css": "./styles/index.css",
+    "./atoms/*": "./atoms/*",
+    "./molecules/*": "./molecules/*",
+    ".": "./index.ts"
   },
   "types": "uikit-global-types.d.ts"
 }
