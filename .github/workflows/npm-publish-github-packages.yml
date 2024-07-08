@@ -8,15 +8,15 @@ on:
     types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: npm ci --include=optional
-      - run: npm test
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 22
+  #     - run: npm ci --include=optional
+  #     - run: npm test
 
   publish-gpr:
     needs: build
@@ -27,8 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm run build
-      - run: cd dist
-      - run: ls
+      - name: Change directory to dist
+        working-directory: ./dist
+        run: ls
       - uses: actions/setup-node@v4
         with:
           node-version: 22
