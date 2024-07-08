@@ -1,0 +1,33 @@
+{
+  "name": "Mode 1",
+  "variables": [
+    {
+      "name": "2",
+      "value": 28,
+      "cssVar": "--2",
+      "cssValue": "28",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "2-5",
+      "value": 32,
+      "cssVar": "--2-5",
+      "cssValue": "32",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "5",
+      "value": 52,
+      "cssVar": "--5",
+      "cssValue": "52",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "10",
+      "value": 104,
+      "cssVar": "--10",
+      "cssValue": "104",
+      "resolvedType": "FLOAT"
+    }
+  ]
+}

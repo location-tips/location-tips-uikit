@@ -1,0 +1,12 @@
+{
+  "name": "NL",
+  "variables": [
+    {
+      "name": "title",
+      "value": "Niewe clothes",
+      "cssVar": "--title",
+      "cssValue": "\"Niewe clothes\"",
+      "resolvedType": "STRING"
+    }
+  ]
+}

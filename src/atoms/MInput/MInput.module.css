@@ -1,0 +1,125 @@
+.inputHeading {
+  width: 100%;
+}
+
+.inputContainer {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: var(--input-field-whiteSpace-field-padding-vertical, 12px)
+    var(--input-field-whiteSpace-field-padding-horizontal, 16px);
+  border-radius: var(--input-field-borderRadius-default, 8px);
+  transition: all 0.2s ease-in-out;
+}
+
+.input {
+  border: 0 none;
+  flex: 1;
+  outline: none;
+  font-size: var(--typography-font-size-m, 14px);
+}
+
+/** States */
+
+/* enabled */
+.inputWrapper.regular .inputContainer {
+  border: 1px solid var(--input-text-field-enabled-border-color, #d9d9d9);
+  background: var(
+    --input-text-field-enabled-background-color,
+    rgba(255, 255, 255, 0)
+  );
+  color: var(--input-text-field-enabled-font-color, #8c8c8c);
+}
+
+.inputWrapper.regular .inputContainer input {
+  color: var(--input-text-field-enabled-font-color, #8c8c8c);
+}
+
+/* valid */
+.inputWrapper.valid .inputContainer {
+  border: 1px solid var(--input-text-field-valid-border-color, #479900);
+  background: var(
+    --input-text-field-valid-background-color,
+    rgba(255, 255, 255, 0)
+  );
+  color: var(--input-text-field-valid-font-color, #000);
+}
+
+.inputWrapper.valid .inputContainer input {
+  color: var(--input-text-field-valid-font-color, #000);
+}
+
+/* invalid */
+.inputWrapper.invalid .inputContainer {
+  border: 1px solid var(--input-text-field-invalid-border-color, #dc2020);
+  background: var(
+    --input-text-field-invalid-background-color,
+    rgba(255, 255, 255, 0)
+  );
+  color: var(--input-text-field-invalid-font-color, #dc2020);
+}
+
+.inputWrapper.invalid .inputContainer input {
+  color: var(--input-text-field-invalid-font-color, #dc2020);
+}
+
+/* hover */
+.inputWrapper:hover .inputContainer {
+  border: 1px solid var(--input-text-field-hover-border-color, #d9d9d9);
+  background: var(
+    --input-text-field-hover-background-color,
+    rgba(255, 255, 255, 0.05)
+  );
+  color: var(--input-text-field-hover-font-color, #8c8c8c);
+}
+
+.inputWrapper:hover .inputContainer input {
+  color: var(--input-text-field-hover-font-color, #8c8c8c);
+}
+
+/* focus */
+.inputWrapper:has(.input:focus) .inputContainer {
+  border: 1px solid var(--input-text-field-focus-border-color, #2994ff);
+  background: var(
+    --input-text-field-focus-background-color,
+    rgba(255, 255, 255, 0)
+  );
+  color: var(--input-text-field-focus-font-color, #000);
+}
+
+.inputWrapper:has(.input:focus) .inputContainer input {
+  color: var(--input-text-field-focus-font-color, #000);
+}
+
+/* active */
+.inputWrapper:has(.input:active) .inputContainer {
+  color: var(--input-text-field-active-font-color, #8c8c8c);
+  border: 1px solid #8c8c8c;
+  background: var(
+    --input-text-field-active-background-color,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.inputWrapper:has(.input:active) .inputContainer input {
+  color: var(--input-text-field-active-font-color, #8c8c8c);
+}
+
+/* disabled */
+.inputWrapper:has(.input:disabled) .inputContainer {
+  color: var(--input-text-field-disabled-font-color, #bfbfbf);
+  border: 1px solid var(--input-text-field-disabled-border-color, #bfbfbf);
+  background: var(
+    --input-text-field-disabled-background-color,
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.inputWrapper:has(.input:disabled) .inputContainer input {
+  color: var(--input-text-field-disabled-font-color, #bfbfbf);
+}
+
+.inputWrapper.invalid:has(.input:disabled) .inputContainer {
+  border: 1px solid #dc2020;
+}

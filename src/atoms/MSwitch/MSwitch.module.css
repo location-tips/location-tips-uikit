@@ -1,0 +1,120 @@
+.switchWrapper {
+  width: 100%;
+}
+
+.switchWrapper input[type='checkbox'] {
+  display: none;
+}
+
+.switchWrapper label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switchWrapper input[type='checkbox'] + label:before {
+  content: '';
+  display: flex;
+  justify-content: center;
+  border: 1px solid
+    var(--input-checkbox-indeterminate-background-disabled, #bfbfbf);
+  border-radius: var(--checkbox-borderRadius-default, 4px);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  min-width: 44px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -6px;
+  right: 0;
+  bottom: 0;
+  background-color: var(--input-checkbox-unchecked-outline-hover, #8c8c8c);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+  width: 40px;
+  height: 20px;
+}
+
+input:disabled + .slider {
+  background-color: var(
+    --input-checkbox-indeterminate-background-disabled,
+    #bfbfbf
+  );
+}
+
+input:disabled + .slider:before {
+  background-color: var(--input-checkbox-unchecked-outline-hover, #8c8c8c);
+  cursor: not-allowed;
+}
+
+.rectangular {
+  border-radius: 4px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--input-checkbox-checked-icon-active, #ffffff);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.slider.rectangular:before {
+  border-radius: 4px;
+}
+
+.customSwitchIconLeft,
+.customSwitchIconRight {
+  position: absolute;
+  bottom: 1px;
+  transition: 0.4s;
+}
+
+.customSwitchIconRight {
+  right: 6px;
+}
+
+.customSwitchIconLeft {
+  left: 5px;
+}
+
+input:checked + .slider {
+  background-color: var(--input-checkbox-checked-background-active, #0047b3);
+}
+
+input[type='checkbox'] + .slider > .customSwitchIconLeft {
+  display: inline-block;
+}
+
+input[type='checkbox']:checked + .slider > .customSwitchIconLeft {
+  display: none;
+}
+
+input:checked + .slider > .customSwitchIconRight {
+  display: inline-block;
+}
+
+input + .slider > .customSwitchIconRight {
+  display: none;
+}
+
+input:checked + .slider:before {
+  transform: translateX(19px);
+}

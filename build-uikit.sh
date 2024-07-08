@@ -5,7 +5,4 @@ rm -rf ./dist
 mkdir ./dist
 
 # Copy all files from src to ../dist
-cp -R ./uikit-react/src/* ./dist
-
-# Copy package.json to ../dist
-cp ./uikit-react/package.json ./dist
+cp -R ./src/* ./dist

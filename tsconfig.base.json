@@ -14,11 +14,8 @@
     "types": ["node", "jest"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@nx/react": ["@nx/react/src/index.ts"],
-      "uikit-react": ["uikit-react/index.ts"],
-    }
+    "baseUrl": "."
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "files": ["node_modules/@types/css-modules/index.d.ts"]
 }

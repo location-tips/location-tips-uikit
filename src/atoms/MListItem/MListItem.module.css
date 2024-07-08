@@ -1,0 +1,26 @@
+/* List item */
+.item {
+  padding: 8px 16px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.itemBorder {
+  border-bottom: 1px solid var(--divider-color, #eeeeee);
+}
+
+.itemBorder:last-of-type {
+  border-bottom: none;
+}
+
+/*hover*/
+.item:hover {
+  border-radius: var(--button-outlined-medium-borderRadius-default, 10px);
+  background: var(--divider-hover, #eeeeee);
+}
+
+/*active*/
+.item:active {
+  border-radius: var(--button-outlined-medium-borderRadius-default, 10px);
+  background: var(--divider-active, #cccccc);
+}

@@ -1,0 +1,404 @@
+:root[data-brand='brand01'] {
+  --palette-primary-10: rgba(255, 230.00000149011612, 236.00000113248825, 1);
+  --palette-primary-20: rgba(255, 163.00000548362732, 189.00000393390656, 1);
+  --palette-primary-30: rgba(255, 122.00000032782555, 164.00000542402267, 1);
+  --palette-primary-40: rgba(255, 82.00000271201134, 142.00000673532486, 1);
+  --palette-primary-50: rgba(255, 41.00000135600567, 123.0000002682209, 1);
+  --palette-primary-60B: rgba(255, 0, 107.09999665617943, 1);
+  --palette-primary-70: rgba(217.0000022649765, 0, 98.00000175833702, 1);
+  --palette-primary-80: rgba(179.000004529953, 0, 86.00000247359276, 1);
+  --palette-primary-90: rgba(140.00000685453415, 0, 72.00000330805779, 1);
+  --palette-primary-100: rgba(102.00000151991844, 0, 56.000000461936, 1);
+  --palette-secondary-10: rgba(245.00000059604645, 230.00000149011612, 255, 1);
+  --palette-secondary-20: rgba(215.0000023841858, 163.00000548362732, 255, 1);
+  --palette-secondary-30: rgba(193.00000369548798, 122.00000032782555, 255, 1);
+  --palette-secondary-40: rgba(
+    167.00000524520874,
+    81.00000277161598,
+    252.00000017881393,
+    1
+  );
+  --palette-secondary-50: rgba(
+    132.0000073313713,
+    38.0000015348196,
+    240.00000089406967,
+    1
+  );
+  --palette-secondary-60B: rgba(100.27165666222572, 0, 227.89003551006317, 1);
+  --palette-secondary-70: rgba(75.00000312924385, 0, 189.00000393390656, 1);
+  --palette-secondary-80: rgba(55.00000052154064, 0, 150.0000062584877, 1);
+  --palette-secondary-90: rgba(37.00000159442425, 0, 112.000000923872, 1);
+  --palette-secondary-100: rgba(22.000000588595867, 0, 74.0000031888485, 1);
+  --palette-tertiary-10: rgba(230.00000149011612, 252.00000017881393, 255, 1);
+  --palette-tertiary-20: rgba(179.000004529953, 242.00000077486038, 255, 1);
+  --palette-tertiary-30: rgba(138.00000697374344, 232.00000137090683, 255, 1);
+  --palette-tertiary-40: rgba(97.00000181794167, 218.00000220537186, 255, 1);
+  --palette-tertiary-50: rgba(56.000000461936, 202.00000315904617, 255, 1);
+  --palette-tertiary-60B: rgba(
+    15.455840695649385,
+    177.86340951919556,
+    247.46664583683014,
+    1
+  );
+  --palette-tertiary-70: rgba(
+    2.000000118277967,
+    140.00000685453415,
+    209.00000274181366,
+    1
+  );
+  --palette-tertiary-80: rgba(0, 108.00000116229057, 171.00000500679016, 1);
+  --palette-tertiary-90: rgba(0, 80.00000283122063, 133.00000727176666, 1);
+  --palette-tertiary-100: rgba(0, 53.00000064074993, 94.0000019967556, 1);
+  --palette-neutral-10-white: rgba(255, 255, 255, 1);
+  --palette-neutral-20: rgba(
+    250.00000029802322,
+    250.00000029802322,
+    250.00000029802322,
+    1
+  );
+  --palette-neutral-30: rgba(
+    245.00000059604645,
+    245.00000059604645,
+    245.00000059604645,
+    1
+  );
+  --palette-neutral-40: rgba(
+    240.00000089406967,
+    240.00000089406967,
+    240.00000089406967,
+    1
+  );
+  --palette-neutral-50: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  --palette-neutral-60B: rgba(
+    191.00000381469727,
+    191.00000381469727,
+    191.00000381469727,
+    1
+  );
+  --palette-neutral-70: rgba(
+    140.00000685453415,
+    140.00000685453415,
+    140.00000685453415,
+    1
+  );
+  --palette-neutral-80: rgba(
+    89.00000229477882,
+    89.00000229477882,
+    89.00000229477882,
+    1
+  );
+  --palette-neutral-90: rgba(
+    67.00000360608101,
+    67.00000360608101,
+    67.00000360608101,
+    1
+  );
+  --palette-neutral-100: rgba(
+    38.0000015348196,
+    38.0000015348196,
+    38.0000015348196,
+    1
+  );
+  --palette-neutral-110: rgba(
+    31.000000052154064,
+    31.000000052154064,
+    31.000000052154064,
+    1
+  );
+  --palette-neutral-120: rgba(
+    20.000000707805157,
+    20.000000707805157,
+    20.000000707805157,
+    1
+  );
+  --palette-neutral-130-black: rgba(
+    0.33216095762327313,
+    0.33216095762327313,
+    0.33216095762327313,
+    1
+  );
+  --palette-active-10: rgba(255, 230.00000149011612, 239.00000095367432, 1);
+  --palette-active-20: rgba(255, 163.00000548362732, 200.00000327825546, 1);
+  --palette-active-30: rgba(255, 122.00000032782555, 180.00000447034836, 1);
+  --palette-active-40: rgba(255, 82.00000271201134, 163.00000548362732, 1);
+  --palette-active-50: rgba(255, 41.00000135600567, 148.000006377697, 1);
+  --palette-active-60B: rgba(255, 0, 137.7000054717064, 1);
+  --palette-active-70: rgba(217.0000022649765, 0, 123.0000002682209, 1);
+  --palette-active-80: rgba(179.000004529953, 0, 107.00000122189522, 1);
+  --palette-active-90: rgba(140.00000685453415, 0, 89.00000229477882, 1);
+  --palette-active-100: rgba(102.00000151991844, 0, 68.00000354647636, 1);
+  --palette-semantic-success-10: rgba(
+    247.00000047683716,
+    255,
+    230.00000149011612,
+    1
+  );
+  --palette-semantic-success-20: rgba(
+    210.00000268220901,
+    242.00000077486038,
+    155.00000596046448,
+    1
+  );
+  --palette-semantic-success-30: rgba(
+    182.00000435113907,
+    230.00000149011612,
+    110.00000104308128,
+    1
+  );
+  --palette-semantic-success-40: rgba(
+    153.00000607967377,
+    217.0000022649765,
+    69.00000348687172,
+    1
+  );
+  --palette-semantic-success-50: rgba(
+    124.00000020861626,
+    204.00000303983688,
+    33.00000183284283,
+    1
+  );
+  --palette-semantic-success-60B: rgba(
+    96.15158334374428,
+    192.30316668748856,
+    0,
+    1
+  );
+  --palette-semantic-success-70: rgba(
+    71.00000336766243,
+    153.00000607967377,
+    0,
+    1
+  );
+  --palette-semantic-success-80: rgba(
+    50.000000819563866,
+    115.00000074505806,
+    0,
+    1
+  );
+  --palette-semantic-success-90: rgba(
+    31.000000052154064,
+    77.00000301003456,
+    0,
+    1
+  );
+  --palette-semantic-success-100: rgba(14.000000115484, 38.0000015348196, 0, 1);
+  --palette-semantic-information-10: rgba(
+    232.00000137090683,
+    253.0000001192093,
+    255,
+    1
+  );
+  --palette-semantic-information-20: rgba(
+    191.00000381469727,
+    249.00000035762787,
+    255,
+    1
+  );
+  --palette-semantic-information-30: rgba(
+    150.0000062584877,
+    241.00000083446503,
+    255,
+    1
+  );
+  --palette-semantic-information-40: rgba(
+    110.00000104308128,
+    231.00000143051147,
+    255,
+    1
+  );
+  --palette-semantic-information-50: rgba(
+    69.00000348687172,
+    218.00000220537186,
+    255,
+    1
+  );
+  --palette-semantic-information-60B: rgba(
+    27.47973594814539,
+    200.39513647556305,
+    255,
+    1
+  );
+  --palette-semantic-information-70: rgba(
+    13.000000175088644,
+    162.00000554323196,
+    217.0000022649765,
+    1
+  );
+  --palette-semantic-information-80: rgba(
+    2.000000118277967,
+    125.00000014901161,
+    179.000004529953,
+    1
+  );
+  --palette-semantic-information-90: rgba(
+    0,
+    94.0000019967556,
+    140.00000685453415,
+    1
+  );
+  --palette-semantic-information-100: rgba(
+    0,
+    65.0000037252903,
+    102.00000151991844,
+    1
+  );
+  --palette-semantic-warning-10: rgba(
+    255,
+    252.00000017881393,
+    230.00000149011612,
+    1
+  );
+  --palette-semantic-warning-20: rgba(
+    255,
+    241.00000083446503,
+    163.00000548362732,
+    1
+  );
+  --palette-semantic-warning-30: rgba(
+    255,
+    231.00000143051147,
+    122.00000032782555,
+    1
+  );
+  --palette-semantic-warning-40: rgba(
+    255,
+    217.0000022649765,
+    82.00000271201134,
+    1
+  );
+  --palette-semantic-warning-50: rgba(
+    255,
+    201.00000321865082,
+    41.00000135600567,
+    1
+  );
+  --palette-semantic-warning-60B: rgba(255, 183.60000729560852, 0, 1);
+  --palette-semantic-warning-70: rgba(
+    217.0000022649765,
+    148.000006377697,
+    0,
+    1
+  );
+  --palette-semantic-warning-80: rgba(
+    179.000004529953,
+    116.00000068545341,
+    0,
+    1
+  );
+  --palette-semantic-warning-90: rgba(
+    140.00000685453415,
+    86.00000247359276,
+    0,
+    1
+  );
+  --palette-semantic-warning-100: rgba(
+    102.00000151991844,
+    60.00000022351742,
+    0,
+    1
+  );
+  --palette-semantic-error-10: rgba(
+    255,
+    242.00000077486038,
+    240.00000089406967,
+    1
+  );
+  --palette-semantic-error-20: rgba(
+    255,
+    209.00000274181366,
+    201.00000321865082,
+    1
+  );
+  --palette-semantic-error-30: rgba(
+    255,
+    170.0000050663948,
+    161.0000056028366,
+    1
+  );
+  --palette-semantic-error-40: rgba(
+    245.00000059604645,
+    124.00000020861626,
+    115.00000074505806,
+    1
+  );
+  --palette-semantic-error-50: rgba(
+    232.00000137090683,
+    77.00000301003456,
+    72.00000330805779,
+    1
+  );
+  --palette-semantic-error-60B: rgba(
+    220.009805560112,
+    32.11766257882118,
+    32.11766257882118,
+    1
+  );
+  --palette-semantic-error-70: rgba(
+    181.0000044107437,
+    18.000000827014446,
+    24.000000469386578,
+    1
+  );
+  --palette-semantic-error-80: rgba(
+    143.00000667572021,
+    7.000000057742,
+    16.000000946223736,
+    1
+  );
+  --palette-semantic-error-90: rgba(
+    105.00000134110451,
+    0,
+    10.000000353902578,
+    1
+  );
+  --palette-semantic-error-100: rgba(
+    66.00000366568565,
+    0,
+    9.000000413507223,
+    1
+  );
+  --whiteSpace-general-_25x: 0.25rem;
+  --whiteSpace-general-_5x: 0.25rem;
+  --whiteSpace-general-1x: 0.5rem;
+  --whiteSpace-general-1_5x: 0.75rem;
+  --whiteSpace-general-2x: 1rem;
+  --whiteSpace-general-3x: 1.5rem;
+  --whiteSpace-general-4x: 2rem;
+  --whiteSpace-general-6x: 3rem;
+  --whiteSpace-general-8x: 4rem;
+  --whiteSpace-general-9x: 4.5rem;
+  --whiteSpace-general-12x: 6rem;
+  --whiteSpace-general-14x: 7rem;
+  --whiteSpace-general-16x: 8rem;
+  --borderRadius-general-_25x: 0.08rem;
+  --borderRadius-general-_5x: 0.16rem;
+  --borderRadius-general-1x: 0.31rem;
+  --borderRadius-general-1_5x: 0.47rem;
+  --borderRadius-general-2x: 0.63rem;
+  --borderRadius-general-3x: 0.94rem;
+  --borderRadius-general-4x: 1.25rem;
+  --borderRadius-general-6x: 1.88rem;
+  --borderRadius-general-8x: 2.5rem;
+  --borderRadius-general-9x: 2.81rem;
+  --borderRadius-general-12x: 3.75rem;
+  --borderRadius-general-14x: 4.38rem;
+  --borderRadius-general-16x: 5rem;
+  --size-general-_25x: 0.08rem;
+  --size-general-_5x: 0.16rem;
+  --size-general-1x: 0.31rem;
+  --size-general-1_5x: 0.47rem;
+  --size-general-2x: 0.63rem;
+  --size-general-3x: 0.94rem;
+  --size-general-4x: 1.25rem;
+  --size-general-6x: 1.88rem;
+  --size-general-8x: 2.5rem;
+  --size-general-9x: 2.81rem;
+  --size-general-12x: 3.75rem;
+  --size-general-14x: 4.38rem;
+  --size-general-16x: 5rem;
+}

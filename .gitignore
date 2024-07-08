@@ -9,3 +9,5 @@ dist/
 dist-storybook/
 .DS_Store
 .idea/
+
+*storybook.log

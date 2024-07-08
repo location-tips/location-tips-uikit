@@ -1,0 +1,1394 @@
+{
+  "name": "brand02",
+  "variables": [
+    {
+      "name": "palette/primary/10",
+      "value": {
+        "r": 0.9411764740943909,
+        "g": 1,
+        "b": 0.9764705896377563,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-10",
+      "cssValue": "rgba(240.00000089406967, 255, 249.00000035762787, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/20",
+      "value": {
+        "r": 0.8117647171020508,
+        "g": 1,
+        "b": 0.9254902005195618,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-20",
+      "cssValue": "rgba(207.00000286102295, 255, 236.00000113248825, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/30",
+      "value": {
+        "r": 0.6509804129600525,
+        "g": 1,
+        "b": 0.8784313797950745,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-30",
+      "cssValue": "rgba(166.00000530481339, 255, 224.000001847744, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/40",
+      "value": {
+        "r": 0.48627451062202454,
+        "g": 0.9882352948188782,
+        "b": 0.8313725590705872,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-40",
+      "cssValue": "rgba(124.00000020861626, 252.00000017881393, 212.00000256299973, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/50",
+      "value": {
+        "r": 0.30980393290519714,
+        "g": 0.9411764740943909,
+        "b": 0.7607843279838562,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-50",
+      "cssValue": "rgba(79.00000289082527, 240.00000089406967, 194.00000363588333, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/60B",
+      "value": {
+        "r": 0.15071186423301697,
+        "g": 0.8936945796012878,
+        "b": 0.7153787016868591,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-60B",
+      "cssValue": "rgba(38.43152537941933, 227.8921177983284, 182.42156893014908, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/70",
+      "value": {
+        "r": 0.09019608050584793,
+        "g": 0.7411764860153198,
+        "b": 0.6000000238418579,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-70",
+      "cssValue": "rgba(23.000000528991222, 189.00000393390656, 153.00000607967377, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/80",
+      "value": {
+        "r": 0.04313725605607033,
+        "g": 0.5882353186607361,
+        "b": 0.4901960790157318,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-80",
+      "cssValue": "rgba(11.000000294297934, 150.0000062584877, 125.00000014901161, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/90",
+      "value": {
+        "r": 0.007843137718737125,
+        "g": 0.43921568989753723,
+        "b": 0.3764705955982208,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-90",
+      "cssValue": "rgba(2.000000118277967, 112.000000923872, 96.00000187754631, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/primary/100",
+      "value": {
+        "r": 0.003921568859368563,
+        "g": 0.29019609093666077,
+        "b": 0.2549019753932953,
+        "a": 1
+      },
+      "cssVar": "--palette-primary-100",
+      "cssValue": "rgba(1.0000000591389835, 74.0000031888485, 65.0000037252903, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/10",
+      "value": {
+        "r": 0.9411764740943909,
+        "g": 0.9882352948188782,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-10",
+      "cssValue": "rgba(240.00000089406967, 252.00000017881393, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/20",
+      "value": {
+        "r": 0.9098039269447327,
+        "g": 0.9803921580314636,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-20",
+      "cssValue": "rgba(232.00000137090683, 250.00000029802322, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/30",
+      "value": {
+        "r": 0.7490196228027344,
+        "g": 0.9333333373069763,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-30",
+      "cssValue": "rgba(191.00000381469727, 238.00000101327896, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/40",
+      "value": {
+        "r": 0.5882353186607361,
+        "g": 0.8784313797950745,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-40",
+      "cssValue": "rgba(150.0000062584877, 224.000001847744, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/50",
+      "value": {
+        "r": 0.4313725531101227,
+        "g": 0.8117647171020508,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-50",
+      "cssValue": "rgba(110.00000104308128, 207.00000286102295, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/60B",
+      "value": {
+        "r": 0.2666666805744171,
+        "g": 0.7333333492279053,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-60B",
+      "cssValue": "rgba(68.00000354647636, 187.00000405311584, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/70",
+      "value": {
+        "r": 0.1882352977991104,
+        "g": 0.5843137502670288,
+        "b": 0.8509804010391235,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-70",
+      "cssValue": "rgba(48.000000938773155, 149.00000631809235, 217.0000022649765, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/80",
+      "value": {
+        "r": 0.11764705926179886,
+        "g": 0.4470588266849518,
+        "b": 0.7019608020782471,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-80",
+      "cssValue": "rgba(30.00000011175871, 114.0000008046627, 179.000004529953, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/90",
+      "value": {
+        "r": 0.06666667014360428,
+        "g": 0.32549020648002625,
+        "b": 0.5490196347236633,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-90",
+      "cssValue": "rgba(17.00000088661909, 83.00000265240669, 140.00000685453415, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/secondary/100",
+      "value": {
+        "r": 0.04313725605607033,
+        "g": 0.2235294133424759,
+        "b": 0.4000000059604645,
+        "a": 1
+      },
+      "cssVar": "--palette-secondary-100",
+      "cssValue": "rgba(11.000000294297934, 57.00000040233135, 102.00000151991844, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/10",
+      "value": {
+        "r": 0.9725490212440491,
+        "g": 0.9411764740943909,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-10",
+      "cssValue": "rgba(248.0000004172325, 240.00000089406967, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/20",
+      "value": {
+        "r": 0.9411764740943909,
+        "g": 0.8784313797950745,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-20",
+      "cssValue": "rgba(240.00000089406967, 224.000001847744, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/30",
+      "value": {
+        "r": 0.8549019694328308,
+        "g": 0.7215686440467834,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-30",
+      "cssValue": "rgba(218.00000220537186, 184.00000423192978, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/40",
+      "value": {
+        "r": 0.7568627595901489,
+        "g": 0.5607843399047852,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-40",
+      "cssValue": "rgba(193.00000369548798, 143.00000667572021, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/50",
+      "value": {
+        "r": 0.6509804129600525,
+        "g": 0.4000000059604645,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-50",
+      "cssValue": "rgba(166.00000530481339, 102.00000151991844, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/60B",
+      "value": {
+        "r": 0.5227466225624084,
+        "g": 0.23605239391326904,
+        "b": 0.9905108213424683,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-60B",
+      "cssValue": "rgba(133.30038875341415, 60.193360447883606, 252.5802594423294, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/70",
+      "value": {
+        "r": 0.3960784375667572,
+        "g": 0.16078431904315948,
+        "b": 0.8392156958580017,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-70",
+      "cssValue": "rgba(101.00000157952309, 41.00000135600567, 214.00000244379044, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/80",
+      "value": {
+        "r": 0.2862745225429535,
+        "g": 0.09803921729326248,
+        "b": 0.6901960968971252,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-80",
+      "cssValue": "rgba(73.00000324845314, 25.000000409781933, 176.00000470876694, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/90",
+      "value": {
+        "r": 0.1882352977991104,
+        "g": 0.0470588244497776,
+        "b": 0.5411764979362488,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-90",
+      "cssValue": "rgba(48.000000938773155, 12.000000234693289, 138.00000697374344, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/tertiary/100",
+      "value": {
+        "r": 0.12156862765550613,
+        "g": 0.0313725508749485,
+        "b": 0.38823530077934265,
+        "a": 1
+      },
+      "cssVar": "--palette-tertiary-100",
+      "cssValue": "rgba(31.000000052154064, 8.000000473111868, 99.00000169873238, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/10-white",
+      "value": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-10-white",
+      "cssValue": "rgba(255, 255, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/20",
+      "value": {
+        "r": 0.9803921580314636,
+        "g": 0.9803921580314636,
+        "b": 0.9803921580314636,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-20",
+      "cssValue": "rgba(250.00000029802322, 250.00000029802322, 250.00000029802322, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/30",
+      "value": {
+        "r": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "b": 0.9607843160629272,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-30",
+      "cssValue": "rgba(245.00000059604645, 245.00000059604645, 245.00000059604645, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/40",
+      "value": {
+        "r": 0.9411764740943909,
+        "g": 0.9411764740943909,
+        "b": 0.9411764740943909,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-40",
+      "cssValue": "rgba(240.00000089406967, 240.00000089406967, 240.00000089406967, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/50",
+      "value": {
+        "r": 0.8509804010391235,
+        "g": 0.8509804010391235,
+        "b": 0.8509804010391235,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-50",
+      "cssValue": "rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/60B",
+      "value": {
+        "r": 0.7490196228027344,
+        "g": 0.7490196228027344,
+        "b": 0.7490196228027344,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-60B",
+      "cssValue": "rgba(191.00000381469727, 191.00000381469727, 191.00000381469727, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/70",
+      "value": {
+        "r": 0.5490196347236633,
+        "g": 0.5490196347236633,
+        "b": 0.5490196347236633,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-70",
+      "cssValue": "rgba(140.00000685453415, 140.00000685453415, 140.00000685453415, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/80",
+      "value": {
+        "r": 0.3490196168422699,
+        "g": 0.3490196168422699,
+        "b": 0.3490196168422699,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-80",
+      "cssValue": "rgba(89.00000229477882, 89.00000229477882, 89.00000229477882, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/90",
+      "value": {
+        "r": 0.26274511218070984,
+        "g": 0.26274511218070984,
+        "b": 0.26274511218070984,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-90",
+      "cssValue": "rgba(67.00000360608101, 67.00000360608101, 67.00000360608101, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/100",
+      "value": {
+        "r": 0.14901961386203766,
+        "g": 0.14901961386203766,
+        "b": 0.14901961386203766,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-100",
+      "cssValue": "rgba(38.0000015348196, 38.0000015348196, 38.0000015348196, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/110",
+      "value": {
+        "r": 0.12156862765550613,
+        "g": 0.12156862765550613,
+        "b": 0.12156862765550613,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-110",
+      "cssValue": "rgba(31.000000052154064, 31.000000052154064, 31.000000052154064, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/120",
+      "value": {
+        "r": 0.0784313753247261,
+        "g": 0.0784313753247261,
+        "b": 0.0784313753247261,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-120",
+      "cssValue": "rgba(20.000000707805157, 20.000000707805157, 20.000000707805157, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/neutral/130-black",
+      "value": {
+        "r": 0.0013025919906795025,
+        "g": 0.0013025919906795025,
+        "b": 0.0013025919906795025,
+        "a": 1
+      },
+      "cssVar": "--palette-neutral-130-black",
+      "cssValue": "rgba(0.33216095762327313, 0.33216095762327313, 0.33216095762327313, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/10",
+      "value": {
+        "r": 0.9019607901573181,
+        "g": 1,
+        "b": 0.9333333373069763,
+        "a": 1
+      },
+      "cssVar": "--palette-active-10",
+      "cssValue": "rgba(230.00000149011612, 255, 238.00000101327896, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/20",
+      "value": {
+        "r": 0.658823549747467,
+        "g": 1,
+        "b": 0.7803921699523926,
+        "a": 1
+      },
+      "cssVar": "--palette-active-20",
+      "cssValue": "rgba(168.0000051856041, 255, 199.0000033378601, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/30",
+      "value": {
+        "r": 0.501960813999176,
+        "g": 1,
+        "b": 0.6901960968971252,
+        "a": 1
+      },
+      "cssVar": "--palette-active-30",
+      "cssValue": "rgba(128.0000075697899, 255, 176.00000470876694, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/40",
+      "value": {
+        "r": 0.32549020648002625,
+        "g": 0.9607843160629272,
+        "b": 0.5921568870544434,
+        "a": 1
+      },
+      "cssVar": "--palette-active-40",
+      "cssValue": "rgba(83.00000265240669, 245.00000059604645, 151.00000619888306, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/50",
+      "value": {
+        "r": 0.16470588743686676,
+        "g": 0.9098039269447327,
+        "b": 0.49803921580314636,
+        "a": 1
+      },
+      "cssVar": "--palette-active-50",
+      "cssValue": "rgba(42.000001296401024, 232.00000137090683, 127.00000002980232, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/60B",
+      "value": {
+        "r": 0.01568627543747425,
+        "g": 0.8588235378265381,
+        "b": 0.4274509847164154,
+        "a": 1
+      },
+      "cssVar": "--palette-active-60B",
+      "cssValue": "rgba(4.000000236555934, 219.0000021457672, 109.00000110268593, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/70",
+      "value": {
+        "r": 0,
+        "g": 0.7098039388656616,
+        "b": 0.3686274588108063,
+        "a": 1
+      },
+      "cssVar": "--palette-active-70",
+      "cssValue": "rgba(0, 181.0000044107437, 94.0000019967556, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/80",
+      "value": {
+        "r": 0,
+        "g": 0.5607843399047852,
+        "b": 0.30980393290519714,
+        "a": 1
+      },
+      "cssVar": "--palette-active-80",
+      "cssValue": "rgba(0, 143.00000667572021, 79.00000289082527, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/90",
+      "value": {
+        "r": 0,
+        "g": 0.4117647111415863,
+        "b": 0.239215686917305,
+        "a": 1
+      },
+      "cssVar": "--palette-active-90",
+      "cssValue": "rgba(0, 105.00000134110451, 61.00000016391277, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/active/100",
+      "value": {
+        "r": 0,
+        "g": 0.25882354378700256,
+        "b": 0.16078431904315948,
+        "a": 1
+      },
+      "cssVar": "--palette-active-100",
+      "cssValue": "rgba(0, 66.00000366568565, 41.00000135600567, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/10",
+      "value": {
+        "r": 0.9686274528503418,
+        "g": 1,
+        "b": 0.9019607901573181,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-10",
+      "cssValue": "rgba(247.00000047683716, 255, 230.00000149011612, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/20",
+      "value": {
+        "r": 0.8235294222831726,
+        "g": 0.9490196108818054,
+        "b": 0.6078431606292725,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-20",
+      "cssValue": "rgba(210.00000268220901, 242.00000077486038, 155.00000596046448, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/30",
+      "value": {
+        "r": 0.7137255072593689,
+        "g": 0.9019607901573181,
+        "b": 0.4313725531101227,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-30",
+      "cssValue": "rgba(182.00000435113907, 230.00000149011612, 110.00000104308128, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/40",
+      "value": {
+        "r": 0.6000000238418579,
+        "g": 0.8509804010391235,
+        "b": 0.2705882489681244,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-40",
+      "cssValue": "rgba(153.00000607967377, 217.0000022649765, 69.00000348687172, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/50",
+      "value": {
+        "r": 0.48627451062202454,
+        "g": 0.800000011920929,
+        "b": 0.12941177189350128,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-50",
+      "cssValue": "rgba(124.00000020861626, 204.00000303983688, 33.00000183284283, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/60B",
+      "value": {
+        "r": 0.3770650327205658,
+        "g": 0.7541300654411316,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-60B",
+      "cssValue": "rgba(96.15158334374428, 192.30316668748856, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/70",
+      "value": {
+        "r": 0.27843138575553894,
+        "g": 0.6000000238418579,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-70",
+      "cssValue": "rgba(71.00000336766243, 153.00000607967377, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/80",
+      "value": {
+        "r": 0.19607843458652496,
+        "g": 0.45098039507865906,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-80",
+      "cssValue": "rgba(50.000000819563866, 115.00000074505806, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/90",
+      "value": {
+        "r": 0.12156862765550613,
+        "g": 0.3019607961177826,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-90",
+      "cssValue": "rgba(31.000000052154064, 77.00000301003456, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/success/100",
+      "value": {
+        "r": 0.054901961237192154,
+        "g": 0.14901961386203766,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-success-100",
+      "cssValue": "rgba(14.000000115484, 38.0000015348196, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/10",
+      "value": {
+        "r": 0.9098039269447327,
+        "g": 0.9921568632125854,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-10",
+      "cssValue": "rgba(232.00000137090683, 253.0000001192093, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/20",
+      "value": {
+        "r": 0.7490196228027344,
+        "g": 0.9764705896377563,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-20",
+      "cssValue": "rgba(191.00000381469727, 249.00000035762787, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/30",
+      "value": {
+        "r": 0.5882353186607361,
+        "g": 0.9450980424880981,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-30",
+      "cssValue": "rgba(150.0000062584877, 241.00000083446503, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/40",
+      "value": {
+        "r": 0.4313725531101227,
+        "g": 0.9058823585510254,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-40",
+      "cssValue": "rgba(110.00000104308128, 231.00000143051147, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/50",
+      "value": {
+        "r": 0.2705882489681244,
+        "g": 0.8549019694328308,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-50",
+      "cssValue": "rgba(69.00000348687172, 218.00000220537186, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/60B",
+      "value": {
+        "r": 0.10776367038488388,
+        "g": 0.7858632802963257,
+        "b": 1,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-60B",
+      "cssValue": "rgba(27.47973594814539, 200.39513647556305, 255, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/70",
+      "value": {
+        "r": 0.05098039284348488,
+        "g": 0.6352941393852234,
+        "b": 0.8509804010391235,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-70",
+      "cssValue": "rgba(13.000000175088644, 162.00000554323196, 217.0000022649765, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/80",
+      "value": {
+        "r": 0.007843137718737125,
+        "g": 0.4901960790157318,
+        "b": 0.7019608020782471,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-80",
+      "cssValue": "rgba(2.000000118277967, 125.00000014901161, 179.000004529953, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/90",
+      "value": {
+        "r": 0,
+        "g": 0.3686274588108063,
+        "b": 0.5490196347236633,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-90",
+      "cssValue": "rgba(0, 94.0000019967556, 140.00000685453415, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/information/100",
+      "value": {
+        "r": 0,
+        "g": 0.2549019753932953,
+        "b": 0.4000000059604645,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-information-100",
+      "cssValue": "rgba(0, 65.0000037252903, 102.00000151991844, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/10",
+      "value": {
+        "r": 1,
+        "g": 0.9882352948188782,
+        "b": 0.9019607901573181,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-10",
+      "cssValue": "rgba(255, 252.00000017881393, 230.00000149011612, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/20",
+      "value": {
+        "r": 1,
+        "g": 0.9450980424880981,
+        "b": 0.6392157077789307,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-20",
+      "cssValue": "rgba(255, 241.00000083446503, 163.00000548362732, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/30",
+      "value": {
+        "r": 1,
+        "g": 0.9058823585510254,
+        "b": 0.47843137383461,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-30",
+      "cssValue": "rgba(255, 231.00000143051147, 122.00000032782555, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/40",
+      "value": {
+        "r": 1,
+        "g": 0.8509804010391235,
+        "b": 0.32156863808631897,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-40",
+      "cssValue": "rgba(255, 217.0000022649765, 82.00000271201134, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/50",
+      "value": {
+        "r": 1,
+        "g": 0.7882353067398071,
+        "b": 0.16078431904315948,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-50",
+      "cssValue": "rgba(255, 201.00000321865082, 41.00000135600567, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/60B",
+      "value": {
+        "r": 1,
+        "g": 0.7200000286102295,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-60B",
+      "cssValue": "rgba(255, 183.60000729560852, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/70",
+      "value": {
+        "r": 0.8509804010391235,
+        "g": 0.5803921818733215,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-70",
+      "cssValue": "rgba(217.0000022649765, 148.000006377697, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/80",
+      "value": {
+        "r": 0.7019608020782471,
+        "g": 0.45490196347236633,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-80",
+      "cssValue": "rgba(179.000004529953, 116.00000068545341, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/90",
+      "value": {
+        "r": 0.5490196347236633,
+        "g": 0.33725491166114807,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-90",
+      "cssValue": "rgba(140.00000685453415, 86.00000247359276, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/warning/100",
+      "value": {
+        "r": 0.4000000059604645,
+        "g": 0.23529411852359772,
+        "b": 0,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-warning-100",
+      "cssValue": "rgba(102.00000151991844, 60.00000022351742, 0, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/10",
+      "value": {
+        "r": 1,
+        "g": 0.9490196108818054,
+        "b": 0.9411764740943909,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-10",
+      "cssValue": "rgba(255, 242.00000077486038, 240.00000089406967, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/20",
+      "value": {
+        "r": 1,
+        "g": 0.8196078538894653,
+        "b": 0.7882353067398071,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-20",
+      "cssValue": "rgba(255, 209.00000274181366, 201.00000321865082, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/30",
+      "value": {
+        "r": 1,
+        "g": 0.6666666865348816,
+        "b": 0.6313725709915161,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-30",
+      "cssValue": "rgba(255, 170.0000050663948, 161.0000056028366, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/40",
+      "value": {
+        "r": 0.9607843160629272,
+        "g": 0.48627451062202454,
+        "b": 0.45098039507865906,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-40",
+      "cssValue": "rgba(245.00000059604645, 124.00000020861626, 115.00000074505806, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/50",
+      "value": {
+        "r": 0.9098039269447327,
+        "g": 0.3019607961177826,
+        "b": 0.2823529541492462,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-50",
+      "cssValue": "rgba(232.00000137090683, 77.00000301003456, 72.00000330805779, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/60B",
+      "value": {
+        "r": 0.8627835512161255,
+        "g": 0.1259516179561615,
+        "b": 0.1259516179561615,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-60B",
+      "cssValue": "rgba(220.009805560112, 32.11766257882118, 32.11766257882118, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/70",
+      "value": {
+        "r": 0.7098039388656616,
+        "g": 0.07058823853731155,
+        "b": 0.0941176488995552,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-70",
+      "cssValue": "rgba(181.0000044107437, 18.000000827014446, 24.000000469386578, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/80",
+      "value": {
+        "r": 0.5607843399047852,
+        "g": 0.027450980618596077,
+        "b": 0.062745101749897,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-80",
+      "cssValue": "rgba(143.00000667572021, 7.000000057742, 16.000000946223736, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/90",
+      "value": {
+        "r": 0.4117647111415863,
+        "g": 0,
+        "b": 0.03921568766236305,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-90",
+      "cssValue": "rgba(105.00000134110451, 0, 10.000000353902578, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "palette/semantic/error/100",
+      "value": {
+        "r": 0.25882354378700256,
+        "g": 0,
+        "b": 0.03529411926865578,
+        "a": 1
+      },
+      "cssVar": "--palette-semantic-error-100",
+      "cssValue": "rgba(66.00000366568565, 0, 9.000000413507223, 1)",
+      "resolvedType": "COLOR"
+    },
+    {
+      "name": "whiteSpace/general/_25x",
+      "value": 4,
+      "cssVar": "--whiteSpace-general-_25x",
+      "cssValue": "0.25rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/_5x",
+      "value": 4,
+      "cssVar": "--whiteSpace-general-_5x",
+      "cssValue": "0.25rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/1x",
+      "value": 8,
+      "cssVar": "--whiteSpace-general-1x",
+      "cssValue": "0.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/1_5x",
+      "value": 12,
+      "cssVar": "--whiteSpace-general-1_5x",
+      "cssValue": "0.75rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/2x",
+      "value": 16,
+      "cssVar": "--whiteSpace-general-2x",
+      "cssValue": "1.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/3x",
+      "value": 24,
+      "cssVar": "--whiteSpace-general-3x",
+      "cssValue": "1.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/4x",
+      "value": 32,
+      "cssVar": "--whiteSpace-general-4x",
+      "cssValue": "2.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/6x",
+      "value": 48,
+      "cssVar": "--whiteSpace-general-6x",
+      "cssValue": "3.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/8x",
+      "value": 64,
+      "cssVar": "--whiteSpace-general-8x",
+      "cssValue": "4.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/9x",
+      "value": 72,
+      "cssVar": "--whiteSpace-general-9x",
+      "cssValue": "4.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/12x",
+      "value": 96,
+      "cssVar": "--whiteSpace-general-12x",
+      "cssValue": "6.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/14x",
+      "value": 112,
+      "cssVar": "--whiteSpace-general-14x",
+      "cssValue": "7.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "whiteSpace/general/16x",
+      "value": 128,
+      "cssVar": "--whiteSpace-general-16x",
+      "cssValue": "8.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/_25x",
+      "value": 0.25,
+      "cssVar": "--borderRadius-general-_25x",
+      "cssValue": "0.02rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/_5x",
+      "value": 1,
+      "cssVar": "--borderRadius-general-_5x",
+      "cssValue": "0.06rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/1x",
+      "value": 2,
+      "cssVar": "--borderRadius-general-1x",
+      "cssValue": "0.13rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/1_5x",
+      "value": 3,
+      "cssVar": "--borderRadius-general-1_5x",
+      "cssValue": "0.19rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/2x",
+      "value": 4,
+      "cssVar": "--borderRadius-general-2x",
+      "cssValue": "0.25rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/3x",
+      "value": 6,
+      "cssVar": "--borderRadius-general-3x",
+      "cssValue": "0.38rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/4x",
+      "value": 8,
+      "cssVar": "--borderRadius-general-4x",
+      "cssValue": "0.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/6x",
+      "value": 12,
+      "cssVar": "--borderRadius-general-6x",
+      "cssValue": "0.75rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/8x",
+      "value": 16,
+      "cssVar": "--borderRadius-general-8x",
+      "cssValue": "1.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/9x",
+      "value": 18,
+      "cssVar": "--borderRadius-general-9x",
+      "cssValue": "1.13rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/12x",
+      "value": 24,
+      "cssVar": "--borderRadius-general-12x",
+      "cssValue": "1.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/14x",
+      "value": 28,
+      "cssVar": "--borderRadius-general-14x",
+      "cssValue": "1.75rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "borderRadius/general/16x",
+      "value": 32,
+      "cssVar": "--borderRadius-general-16x",
+      "cssValue": "2.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/_25x",
+      "value": 1,
+      "cssVar": "--size-general-_25x",
+      "cssValue": "0.06rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/_5x",
+      "value": 2,
+      "cssVar": "--size-general-_5x",
+      "cssValue": "0.13rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/1x",
+      "value": 4,
+      "cssVar": "--size-general-1x",
+      "cssValue": "0.25rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/1_5x",
+      "value": 6,
+      "cssVar": "--size-general-1_5x",
+      "cssValue": "0.38rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/2x",
+      "value": 8,
+      "cssVar": "--size-general-2x",
+      "cssValue": "0.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/3x",
+      "value": 12,
+      "cssVar": "--size-general-3x",
+      "cssValue": "0.75rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/4x",
+      "value": 16,
+      "cssVar": "--size-general-4x",
+      "cssValue": "1.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/6x",
+      "value": 24,
+      "cssVar": "--size-general-6x",
+      "cssValue": "1.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/8x",
+      "value": 32,
+      "cssVar": "--size-general-8x",
+      "cssValue": "2.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/9x",
+      "value": 36,
+      "cssVar": "--size-general-9x",
+      "cssValue": "2.25rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/12x",
+      "value": 48,
+      "cssVar": "--size-general-12x",
+      "cssValue": "3.00rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/14x",
+      "value": 56,
+      "cssVar": "--size-general-14x",
+      "cssValue": "3.50rem",
+      "resolvedType": "FLOAT"
+    },
+    {
+      "name": "size/general/16x",
+      "value": 64,
+      "cssVar": "--size-general-16x",
+      "cssValue": "4.00rem",
+      "resolvedType": "FLOAT"
+    }
+  ]
+}
