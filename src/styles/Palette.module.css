@@ -1,0 +1,45 @@
+.colorPalette {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.colorPaletteItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.colorPaletteItemColor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 6rem;
+  border: 1px solid #efefef;
+  background: #fafafa;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.colorPaletteItemColorSwatch {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+}
+
+.colorPaletteItemColorName {
+  text-align: center;
+  color: #333333;
+  font-size: 0.8rem;
+}
+
+.colorPaletteItemColorValue {
+  text-align: center;
+  color: #6c6c6c;
+  font-size: 0.7rem;
+}

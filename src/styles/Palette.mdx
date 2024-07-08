@@ -1,0 +1,21 @@
+import {
+  Canvas,
+  Meta,
+  ColorPalette,
+  ColorItem,
+  Controls,
+} from '@storybook/blocks';
+
+import './brand/whitelabel.css';
+
+import * as PaletteStory from './Palette.stories';
+
+<Meta of={PaletteStory} title="Design System/Palette" />
+
+# Palette
+
+Palette for white label uikit design system
+
+<Canvas of={PaletteStory.Basic} />
+
+<Controls />
