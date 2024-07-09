@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { MIconProps } from 'src/atoms/MIcon/types';
+import { MIconProps } from './types';
 import * as Icons from './index';
 
 type MIconLoaderProps = MIconProps & {

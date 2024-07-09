@@ -1,10 +1,10 @@
 {
   "name": "location-tips",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "./build-uikit.sh",
+    "build": "./build.sh",
     "build:storybook": "storybook build -o ./dist-storybook",
     "storybook": "storybook dev -p 6006",
     "postcss": "npx postcss src/**/*.module.css --base src --dir dist",

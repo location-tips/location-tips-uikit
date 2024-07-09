@@ -9,8 +9,7 @@ const config = {
         generateScopedName: "[name]__[local]___[hash:base64:5]",
         hashPrefix: "prefix",
         getJSON: function (cssFileName, json, outputFileName) {
-          console.log(`[postcss-modules] Save CSS to ${outputFileName}`);
-          var fileToSave = outputFileName.replace(".css", ".css.ts").replace("/src/", "/dist/");
+          var fileToSave = outputFileName.replace(".css", ".css.js").replace("/src/", "/dist/");
           var jsonFileName = path.resolve(fileToSave);
           var newCssFileName = cssFileName.replace(".module.css", ".css");
           console.log(`[postcss-modules] Save JSON to ${jsonFileName}`);

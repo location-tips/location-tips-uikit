@@ -1,14 +1,13 @@
 {
   "name": "@location-tips/location-tips-uikit",
-  "version": "0.0.8",
-  "main": "./index.ts",
+  "version": "0.0.9",
+  "main": "./index.js",
   "type": "module",
   "peerDependencies": {
     "clsx": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "~5.2.2",
-    "zone.js": "~0.14.0"
+    "zone.js": "^0.14.0"
   },
   "sideEffects": [
     "**/*.css"
@@ -18,7 +17,7 @@
     "./index.css": "./styles/index.css",
     "./atoms/*": "./atoms/*",
     "./molecules/*": "./molecules/*",
-    ".": "./index.ts"
+    ".": "./index.js"
   },
-  "types": "uikit-global-types.d.ts"
+  "types": "globals.d.ts"
 }
