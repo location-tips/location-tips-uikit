@@ -14,6 +14,8 @@ const config = {
           var jsonFileName = path.resolve(fileToSave);
           var newCssFileName = cssFileName.replace(".module.css", ".css");
           console.log(`[postcss-modules] Save JSON to ${jsonFileName}`);
+          var destinationFolder = path.dirname(jsonFileName);
+          fs.mkdirSync(destinationFolder, { recursive: true } );
           fs.writeFileSync(jsonFileName, `import "./${path.basename(newCssFileName)}";\n\nconst styles = ${JSON.stringify(json)};\nexport default styles;`);
         },
       }),
