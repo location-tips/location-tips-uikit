@@ -1,8 +1,10 @@
 {
   "name": "@location-tips/location-tips-uikit",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "./index.js",
-  "type": "module",
+  "module": "./index.js",
+  "typings": "./globals.d.ts",
+  "types": "globals.d.ts",
   "peerDependencies": {
     "clsx": "^2.1.0",
     "react": "^18.2.0",
@@ -11,13 +13,5 @@
   },
   "sideEffects": [
     "**/*.css"
-  ],
-  "exports": {
-    "./package.json": "./package.json",
-    "./index.css": "./styles/index.css",
-    "./atoms/*": "./atoms/*",
-    "./molecules/*": "./molecules/*",
-    ".": "./index.js"
-  },
-  "types": "globals.d.ts"
+  ]
 }

@@ -15,7 +15,7 @@ rm -rf ./dist/**/*.mdx
 rm -rf ./dist/**/*.ts
 rm -rf ./dist/**/*.tsx
 
-npx tsc --project ./tsconfig.lib.json --jsx preserve -t es2020 --outDir dist --noEmit false
+npx tsc --project ./tsconfig.lib.json -t es2020 --outDir dist --noEmit false
 
 node node_modules/.bin/postcss src/**/*.module.css --base src --dir dist
 
