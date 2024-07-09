@@ -26,14 +26,15 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
-      - run: npm run build
-      - name: Change directory to dist
-        working-directory: ./dist
-        run: ls
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           registry-url: https://npm.pkg.github.com/
+      - run: npm ci --include=optional
+      - run: npm run build
+      - name: Change directory to dist
+        working-directory: ./dist
+        run: ls
       - name: Publishing dist
         working-directory: ./dist
         run: npm publish
