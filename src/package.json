@@ -1,15 +1,17 @@
 {
   "name": "@location-tips/location-tips-uikit",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "./index.js",
   "module": "./index.js",
   "typings": "./globals.d.ts",
-  "types": "globals.d.ts",
-  "peerDependencies": {
+  "types": "./globals.d.ts",
+  "dependencies": {
     "clsx": "^2.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "zone.js": "^0.14.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "sideEffects": [
     "**/*.css"

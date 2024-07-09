@@ -5,14 +5,13 @@
 - [Installation](#installation)
 - [Library](#library)
 - [Storybook](#storybook)
+- [How to use?](#howto)
 
 ## <a name="result"></a>Result
 
-- https://dk4dkhcaucc0a.cloudfront.net/uikit-react/
+- https://location-tips-ui.web.app/
 
 ## <a name="structure"></a>Structure
-
-Monorepo consist of 4 projects
 
 ### uikit
 
@@ -27,22 +26,6 @@ Main folder splitted to:
 - `types` typescript types
 - `utils` any useful functions 
 
-### uikit-react
-
-Folder contains configs for react uikit and storybook config for react uikit
-
-### uikit-figma
-
-Next.js 14 app with following functionality:
-
-- http://localhost:4200/vars Load variables from figma
-- http://localhost:4200/icon-types Load icons from icons folder (create types and json file for storybook)
-
-To start it, use following command:
-```
-nx run uikit-figma:serve
-```
-
 ## <a name="installation"></a>Installation
 
 ```
@@ -55,42 +38,7 @@ npm install
 
 - React library
 ```
-nx run uikit-react:build
-```
-
-### Test
-
-``Yet nothing to say``
-
-### Deploy
-
-``Yest nothing to say``
-
-## <a name="storybook"></a>Storybook
-
-### Run
-
-- Run storybook for react
-```
-nx run uikit-react:storybook
-```
-
-### Build
-
-- Run storybook for react
-```
-nx run uikit-react:build-storybook
-```
-
-### Deploy
-you need to install firebase tookit globally
-
-```
-sudo npm install -g firebase-tools
-```
-then deploy
-```
-firebase deploy
+nx run build
 ```
 
 ### Tests
@@ -100,14 +48,66 @@ firebase deploy
 npm run test
 ```
 
-- React tests
+### Deploy
+
+- Update `src/package.json` version to the release number you are planning to deploy
+
+- After merging to main you need to create new release in github. Github action triggers by realease creation
+
+- We are using github npm packages repository `npm.pkg.github.com`
+
+
+## <a name="storybook"></a>Storybook
+
+### Run
+
+- Run storybook for react
 ```
-nx run uikit-react:test
+nx run storybook
 ```
 
-### Cache
+### Build
 
-Sometimes you need to reset nx cache
+- Run storybook for react
 ```
-nx reset
+nx run build:storybook
+```
+
+### Deploy
+
+- Just merge to `main` branch and storybook will be deployed 
+
+## <a name="result"></a>How to use library
+
+### Edit `.npmrc`
+
+- we are using github npm registry, thats to install our library you need to configure `.npmrc`
+create github token with access to project packages (access to read) `https://github.com/settings/tokens`
+find `.npmrc` in your home folder `vi ~/.npmrc`
+add the following strings to it
+```
+@location-tips:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<GITHUB_TOKEN>
+```
+
+### Installation
+
+```
+npm insatall @location-tips/location-tips-uikit
+```
+
+### Using in the code
+
+- Import main css file that is includes the all css variables
+
+```
+import "@location-tips/location-tips-uikit/styles/index.css";
+```
+
+- Import components from uikit separatly, your bundler will be happy
+```
+...
+import { MButton } from "@location-tips/location-tips-uikit/atoms/MButton"; 
+import { MInput } from "@location-tips/location-tips-uikit/atoms/MInput"; 
+...
 ```

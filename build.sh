@@ -14,6 +14,7 @@ cp -R ./src/* ./dist
 rm -rf ./dist/**/*.mdx
 rm -rf ./dist/**/*.ts
 rm -rf ./dist/**/*.tsx
+rm -rf ./dist/**/*.map
 
 npx tsc --project ./tsconfig.lib.json -t es2020 --outDir dist --noEmit false
 
@@ -23,4 +24,4 @@ cp -R ./src/**/*.d.ts ./dist
 
 for f in ./dist/**/*.module.css; do mv "$f" "$(echo "$f" | sed s/module.css/css/)"; done
 
-echo "import \"index.d.ts\";"  | tee -a ./dist/globals.d.ts
+echo "import \"./index.d.ts\";"  | tee -a ./dist/globals.d.ts
