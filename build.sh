@@ -18,7 +18,7 @@ rm -rf ./dist/**/*.map
 
 npx tsc --project ./tsconfig.lib.json -t es2020 --outDir dist --noEmit false
 
-node node_modules/.bin/postcss src/**/*.module.css --base src --dir dist
+node node_modules/.bin/postcss src/**/*.module.css --base src --dir dist --config ./postcss-build.config.cjs
 
 cp -R ./src/**/*.d.ts ./dist
 

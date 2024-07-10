@@ -13,6 +13,7 @@ export { MDivider } from './MDivider';
 export { MDropdown } from './MDropdown';
 export { MTabs } from './MTabs';
 export { MText } from './MText';
+export { MTheme } from './MTheme';
 export { MCard } from './MCard';
 export { MSwitch } from './MSwitch';
 export { MListItem } from './MListItem';
