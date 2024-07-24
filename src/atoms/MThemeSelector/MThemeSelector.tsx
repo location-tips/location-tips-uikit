@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MList from '../MList/MList';
 import type { SelectOption } from '../MList/MList';
 import MButton from '../MButton/MButton';
@@ -25,6 +25,10 @@ export const MThemeSelector = ({
 }: MThemeSelectorProps) => {
   const [selectedTheme, setSelectedTheme] = useState(defaultTheme);
   const [open, setOpen] = useState(defaultOpen);
+
+  useEffect(() => {
+    document.getElementsByTagName('html')[0].dataset.theme = selectedTheme;
+  }, [selectedTheme]);
 
   const onThemeChoose = (option: MThemeSelectorOption) => {
     if (option) {
