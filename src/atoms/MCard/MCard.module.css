@@ -11,6 +11,7 @@
   padding: var(--card-padding-vertical) var(--card-padding-horizontal);
   background: var(--card-background);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .shadow {
@@ -23,7 +24,6 @@
 
 .content {
   width: 100%;
-  max-height: 100vh;
   opacity: 1;
   transition: all 0.2s ease-in;
 }
