@@ -26,6 +26,7 @@ export const MThemeSelector = ({
 }: MThemeSelectorProps) => {
   const [selectedItemText, setSelectedItemText] = useState('');
   const [open, setOpen] = useState(false);
+
   const onListItemChoose = (value: any) => {
     setSelectedItemText(value.value);
     setOpen(false);
