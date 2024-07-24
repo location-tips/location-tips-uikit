@@ -26,6 +26,9 @@
   );
   --button-outlined-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
   --button-outlined-medium-borderRadius-default: var(--borderRadius-general-2x);
+  --button-transparent-medium-borderRadius-default: var(
+    --borderRadius-general-2x
+  );
   --button-transparent-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
   --input-field-whiteSpace-field-padding-horizontal: var(
     --whiteSpace-general-2x
