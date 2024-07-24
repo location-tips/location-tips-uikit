@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import MThemeSelector from './MThemeSelector';
-import { useArgs } from '@storybook/preview-api';
 
 const meta: Meta<typeof MThemeSelector> = {
   title: 'Atoms/Layout/MThemeSelector',
@@ -12,19 +11,11 @@ export default meta;
 type Story = StoryObj<typeof MThemeSelector>;
 
 export const Basic: Story = {
-  argTypes: {
-    position: {
-      control: { type: 'select' },
-      options: ['top', 'bottom'],
-    },
-    children: {
-      control: { type: 'text' },
-    },
-  },
+  args: {},
 
-  render: function Render(args) {
-    const [{ open }, updateArgs] = useArgs();
+  argTypes: {},
 
-    return <MThemeSelector {...args} />;
+  render: function Render(_args) {
+    return <MThemeSelector />;
   },
 };

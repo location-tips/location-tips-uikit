@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styles from './MList.module.css';
 import MListItem, { ListItemProps } from '../MListItem/MListItem';
 
-type SelectOption = ListItemProps & {
+export type SelectOption = ListItemProps & {
   key: string;
   value: ReactNode;
 };

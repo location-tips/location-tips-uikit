@@ -8,19 +8,17 @@ import React, {
 import ReactDOMServer from 'react-dom/server';
 import MDropdown from '../MDropdown/MDropdown';
 import MIcon from '../MIcon/MIcon';
-import MList from '../MList/MList';
+import MList, { SelectOption } from '../MList/MList';
 import { ListItemProps } from '../MListItem/MListItem';
 import { MButton } from '../MButton/MButton';
 
-type SelectOption = ListItemProps & {
-  key: string;
-  value: ReactNode;
-};
+type MSelectOption = ListItemProps & SelectOption;
+
 type SelectComponentProps = DetailedHTMLProps<
   HTMLAttributes<HTMLSelectElement>,
   HTMLSelectElement
 > & {
-  options: SelectOption[];
+  options: MSelectOption[];
   label?: ReactNode;
   description?: ReactNode;
 };
@@ -42,7 +40,7 @@ export const MSelect = ({ options }: SelectComponentProps) => {
   const handleClick = () => {
     setOpen(!open);
   };
-  const onChoose = (option: SelectOption) => {
+  const onChoose = (option: MSelectOption) => {
     setInputValue(extractTextFromReactNode(option.value));
   };
 

@@ -3,7 +3,7 @@ import MCard from '../MCard/MCard';
 import clsx from 'clsx';
 import styles from './MDropdown.module.css';
 
-type MDropdownProps = DetailedHTMLProps<
+export type MDropdownProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > & {
@@ -12,6 +12,7 @@ type MDropdownProps = DetailedHTMLProps<
   position?: 'top' | 'bottom';
   align?: 'left' | 'right';
   stretch: boolean;
+  dropdownContentClassName?: string;
 };
 
 export const MDropdown = ({
@@ -22,6 +23,7 @@ export const MDropdown = ({
   stretch = false,
   dropdownContent,
   className,
+  dropdownContentClassName,
   ...props
 }: MDropdownProps) => {
   return (
@@ -32,7 +34,8 @@ export const MDropdown = ({
           styles.dropdown,
           { [styles.open]: open },
           [styles[position], styles[align]],
-          { [styles.stretch]: stretch }
+          { [styles.stretch]: stretch },
+          dropdownContentClassName
         )}
       >
         {dropdownContent}

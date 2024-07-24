@@ -1,54 +1,47 @@
-import { DetailedHTMLProps, HTMLAttributes, useState } from 'react';
-import MCard from '../MCard/MCard';
-import MText from '../MText/MText';
+import { useState } from 'react';
 import MList from '../MList/MList';
-import MFlex from '../MFlex/MFlex';
+import type { SelectOption } from '../MList/MList';
 import MButton from '../MButton/MButton';
-import clsx from 'clsx';
 import styles from './MThemeSelector.module.css';
+import { MDropdown } from '../MDropdown/MDropdown';
+import type { MDropdownProps } from '../MDropdown/MDropdown';
+import type { ListItemProps } from '../MListItem/MListItem';
+import { MIconMoon } from '../MIcon/icons/MIconMoon';
+import { MIconSun } from '../MIcon/icons/MIconSun';
 
-type MThemeSelectorProps = DetailedHTMLProps<
-  HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
-> & {
-  position?: 'top' | 'bottom';
-  align?: 'left' | 'right';
-  stretch: boolean;
+type MThemeSelectorProps = Partial<Omit<MDropdownProps, 'dropdownContent'>> & {
+  onSelectedTheme?: (theme: string) => void;
+  defaultTheme?: string;
 };
 
-export const MThemeSelector = ({
-  children,
-  position = 'bottom',
-  align = 'left',
-  stretch = false,
-  className,
-  ...props
-}: MThemeSelectorProps) => {
-  const [selectedItemText, setSelectedItemText] = useState('');
-  const [open, setOpen] = useState(false);
+type MThemeSelectorOption = ListItemProps & SelectOption;
 
-  const onListItemChoose = (value: any) => {
-    setSelectedItemText(value.value);
+export const MThemeSelector = ({
+  onSelectedTheme,
+  stretch,
+  open: defaultOpen = false,
+  defaultTheme = 'light',
+  ...restDropdownProps
+}: MThemeSelectorProps) => {
+  const [selectedTheme, setSelectedTheme] = useState(defaultTheme);
+  const [open, setOpen] = useState(defaultOpen);
+
+  const onThemeChoose = (option: MThemeSelectorOption) => {
+    if (option) {
+      setSelectedTheme(option.key);
+      onSelectedTheme?.(option.key);
+    }
+
     setOpen(false);
   };
 
-  function onClick() {
+  const onClick = () => {
     setOpen(!open);
-  }
+  };
+
   return (
-    <div className={clsx(styles.dropdownContainer)} {...props}>
-      <MFlex justify="start">
-        <MButton onClick={onClick}>Select theme</MButton>
-        <MText>{selectedItemText}</MText>
-      </MFlex>
-      <MCard
-        className={clsx(
-          styles.dropdown,
-          { [styles.open]: open },
-          [styles[position], styles[align]],
-          { [styles.stretch]: stretch }
-        )}
-      >
+    <MDropdown
+      dropdownContent={
         <MList
           options={[
             {
@@ -61,10 +54,27 @@ export const MThemeSelector = ({
             },
           ]}
           showDivider
-          onChoose={onListItemChoose}
+          onChoose={onThemeChoose}
         />
-      </MCard>
-    </div>
+      }
+      stretch={stretch ?? false}
+      open={open}
+      dropdownContentClassName={styles.dropdownContainer}
+      {...restDropdownProps}
+    >
+      <MButton
+        onClick={onClick}
+        before={
+          selectedTheme === 'light' ? (
+            <MIconSun mode="regular" width={24} />
+          ) : (
+            <MIconMoon mode="regular" width={24} />
+          )
+        }
+      >
+        Select theme
+      </MButton>
+    </MDropdown>
   );
 };
 
