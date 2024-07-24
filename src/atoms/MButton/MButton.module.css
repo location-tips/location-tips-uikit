@@ -48,7 +48,7 @@
 
 .transparent {
   color: var(--button-transparent-enabled-font-color, #ffffff);
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
+  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
   gap: var(--button-transparent-medium-whiteSpace-gap, 8px);
 }
@@ -86,7 +86,7 @@
 .transparent:disabled,
 .transparent:disabled:hover,
 .transparent:disabled:active {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
+  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
   color: var(--button-transparent-disabled-font-color, #f4f5f7);
   cursor: not-allowed;
@@ -110,14 +110,14 @@
 }
 
 .transparent:hover {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
+  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
 }
 
 /* Active */
 
 .primary:active {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
+  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: var(--button-primary-active-background-color, #064acc);
 }
 
@@ -133,7 +133,7 @@
 }
 
 .transparent:active {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
+  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
 }
 
