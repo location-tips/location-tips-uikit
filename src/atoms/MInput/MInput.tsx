@@ -59,8 +59,12 @@ export const MInput = ({
         justify="space-between"
         className={clsx(styles.inputHeading, headingClassName)}
       >
-        {label && <MLabel htmlFor={fieldId}>{label}</MLabel>}
-        {caption && <MCaption>{caption}</MCaption>}
+        {label && (
+          <MLabel htmlFor={fieldId} status={status}>
+            {label}
+          </MLabel>
+        )}
+        {caption && <MCaption status={status}>{caption}</MCaption>}
       </MFlex>
       <MFlex className={clsx(styles.inputContainer, containerClassName)}>
         {before && (

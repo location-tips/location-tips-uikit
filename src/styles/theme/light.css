@@ -37,23 +37,26 @@
   --button-transparent-disabled-font-color: var(--palette-gray-4);
   --input-field-enabled-label-font-color: var(--palette-neutral-130-black);
   --input-field-enabled-assistive-font-color: var(--palette-neutral-130-black);
-  --input-field-enabled-font-color: var(--palette-neutral-70);
-  --input-field-hover-font-color: var(--palette-neutral-70);
-  --input-field-active-font-color: var(--palette-neutral-70);
-  --input-field-focus-font-color: var(--palette-neutral-130-black);
-  --input-field-valid-font-color: var(--palette-neutral-130-black);
-  --input-field-invalid-font-color: var(--palette-semantic-error-60B);
-  --input-field-disabled-font-color: var(--palette-neutral-60B);
-  --input-field-enabled-border-color: var(--palette-neutral-50);
-  --input-field-enabled-background-color: rgba(255, 255, 255, 0);
-  --input-field-hover-border-color: var(--palette-neutral-50);
-  --input-field-hover-background-color: rgba(
-    255,
-    255,
-    255,
-    0.05000000074505806
+  --input-field-enabled-font-color: var(--palette-gray-2);
+  --input-field-enabled-font-before-after: var(--palette-gray-3);
+  --input-field-enabled-placeholder: var(--palette-gray-3);
+  --input-field-hover-font-color: var(--palette-gray-2);
+  --input-field-hover-placeholder: var(--palette-gray-2);
+  --input-field-active-font-color: var(--palette-gray-2);
+  --input-field-focus-font-color-before-after: var(
+    --input-field-enabled-font-color
   );
-  --input-field-active-border-color: var(--palette-neutral-70);
+  --input-field-focus-font-color: var(--palette-neutral-130-black);
+  --input-field-valid-font-before-after: var(--palette-gray-3);
+  --input-field-valid-font-color: var(--palette-gray-2);
+  --input-field-invalid-font-color: var(--palette-semantic-error-60B);
+  --input-field-invalid-font-before-after: var(--palette-semantic-error-60B);
+  --input-field-disabled-font-color: var(--palette-gray-3);
+  --input-field-enabled-border-color: var(--input-regular-border);
+  --input-field-enabled-background-color: rgba(255, 255, 255, 0);
+  --input-field-hover-border-color: var(--palette-gray-2);
+  --input-field-hover-background-color: rgba(255, 255, 255, 0.05);
+  --input-field-active-border-color: var(--palette-gray-2);
   --input-field-active-background-color: rgba(255, 255, 255, 0);
   --input-field-focus-border-color: var(--palette-active-50);
   --input-field-focus-background-color: rgba(255, 255, 255, 0);
@@ -61,13 +64,8 @@
   --input-field-valid-background-color: rgba(255, 255, 255, 0);
   --input-field-invalid-border-color: var(--palette-semantic-error-60B);
   --input-field-invalid-background-color: rgba(255, 255, 255, 0);
-  --input-field-disabled-border-color: var(--palette-neutral-60B);
-  --input-field-disabled-background-color: rgba(
-    0.33216095762327313,
-    0.33216095762327313,
-    0.33216095762327313,
-    0.10000000149011612
-  );
+  --input-field-disabled-border-color: var(--input-regular-border);
+  --input-field-disabled-background-color: var(--palette-gray-4);
   --typography-h1-font-color: var(--palette-neutral-130-black);
   --typography-h2-font-color: var(--palette-neutral-130-black);
   --typography-h3-font-color: var(--palette-neutral-130-black);

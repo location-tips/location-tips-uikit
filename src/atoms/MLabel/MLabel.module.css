@@ -1,4 +1,17 @@
 /** TODO: use variables */
 .label {
-  color: var(--input-text-field-disabled-label-font-color, #000);
+  color: var(--input-field-enabled-font-color, #747e97);
+  font-family: var(--font-family-secondary, Roboto);
+  font-size: var(--font-size-l, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.label.valid {
+  color: var(--input-field-valid-font-color, #747e97);
+}
+
+.label.invalid {
+  color: var(--input-field-invalid-assistive-font-color, #dc2020);
 }
