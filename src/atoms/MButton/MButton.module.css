@@ -9,7 +9,7 @@
 
 .button {
   border: none;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -38,6 +38,15 @@
   gap: var(--button-secondary-medium-whiteSpace-gap, 8px);
 }
 
+.tertiary {
+  padding: var(--button-padding-tertiary, 6px);
+  border-radius: var(--button-tertiary-borderRadius-default, 8px);
+  color: var(--button-tertiary-enabled-font-color, #1e222a);
+  background: var(--button-tertiary-enabled-background-color, #f4f5f7);
+  transition: outline 0.2s ease-in-out;
+  outline: 1px solid var(--button-tertiary-border-default-color, #f4f5f7);
+}
+
 .outlined {
   color: var(--button-outlined-enabled-font-color, #1e222a);
   background: var(--button-outlined-enabled-background-color, #fff);
@@ -58,7 +67,6 @@
 .primary:disabled,
 .primary:disabled:hover,
 .primary:disabled:active {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
   background: var(--button-primary-disabled-background-color, #babecb);
   color: var(--button-primary-disabled-font-color, #f4f5f7);
   cursor: not-allowed;
@@ -67,16 +75,23 @@
 .secondary:disabled,
 .secondary:disabled:hover,
 .secondary:disabled:active {
-  border-radius: var(--button-secondary-medium-borderRadius-default, 16px);
   background: var(--button-secondary-disabled-background-color, #babecb);
   color: var(--button-secondary-disabled-font-color, #f4f5f7);
   cursor: not-allowed;
 }
 
+.tertiary:disabled,
+.tertiary:disabled:hover,
+.tertiary:disabled:active {
+  color: var(--button-tertiary-disabled-font-color, #747e97);
+  background: var(--button-tertiary-disabled-background-color, #f4f5f7);
+  cursor: default;
+  outline-color: var(--button-tertiary-border-disabled-color, #f4f5f7);
+}
+
 .outlined:disabled,
 .outlined:disabled:hover,
 .outlined:disabled:active {
-  border-radius: var(--button-outlined-medium-borderRadius-default, 16px);
   border: 1px solid var(--button-outlined-disabled-border-color, #babecb);
   background: var(--button-outlined-disabled-background-color, #fff);
   color: var(--button-outlined-disabled-font-color, #f4f5f7);
@@ -86,7 +101,6 @@
 .transparent:disabled,
 .transparent:disabled:hover,
 .transparent:disabled:active {
-  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
   color: var(--button-transparent-disabled-font-color, #f4f5f7);
   cursor: not-allowed;
@@ -95,45 +109,47 @@
 /* Hover */
 
 .primary:hover {
-  border-radius: var(--button-primary-medium-borderRadius-default, 16px);
   background: var(--button-primary-hover-background-color, #0753e6);
 }
 
 .secondary:hover {
-  border-radius: var(--button-secondary-medium-borderRadius-default, 16px);
   background: var(--button-secondary-hover-background-color, #c5c9d4);
 }
 
+.tertiary:hover {
+  background: var(--button-tertiary-hover-background-color, #f4f5f7);
+  outline-color: var(--button-tertiary-border-hover-color, #babecb);
+}
+
 .outlined:hover {
-  border-radius: var(--button-outlined-medium-borderRadius-default, 16px);
   border: 1px solid var(--button-outlined-hover-border-color, #babecb);
 }
 
 .transparent:hover {
-  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
 }
 
 /* Active */
 
 .primary:active {
-  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: var(--button-primary-active-background-color, #064acc);
 }
 
 .secondary:active {
-  border-radius: var(--button-secondary-medium-borderRadius-default, 16px);
   background: var(--button-secondary-active-background-color, #afb2bc);
+}
+
+.tertiary:active {
+  background: var(--button-tertiary-active-background-color, #f4f5f7);
+  outline-color: var(--button-tertiary-border-active-color, #747e97);
 }
 
 .outlined:active {
   color: var(--button-outlined-active-font-color);
-  border-radius: var(--button-outlined-medium-borderRadius-default, 16px);
   border: 1px solid var(--button-outlined-active-border-color, #babecb);
 }
 
 .transparent:active {
-  border-radius: var(--button-transparent-medium-borderRadius-default, 16px);
   background: transparent;
 }
 
@@ -142,6 +158,11 @@
 }
 
 .secondary .buttonContent {
+  font-weight: 500;
+}
+
+.tertiary .buttonContent {
+  font-size: var(--font-size-l, 16px);
   font-weight: 500;
 }
 

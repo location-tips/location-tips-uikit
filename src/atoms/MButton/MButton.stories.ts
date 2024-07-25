@@ -23,7 +23,7 @@ export const Basic: Story = {
   argTypes: {
     disabled: { control: { type: 'boolean' } },
     mode: {
-      options: ['primary', 'secondary', 'outlined', 'transparent'],
+      options: ['primary', 'secondary', 'tertiary', 'outlined', 'transparent'],
       control: { type: 'select' },
     },
     before: {
