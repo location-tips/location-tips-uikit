@@ -39,12 +39,11 @@ export const MButton = ({
       className={clsx(
         styles.button,
         className,
-        mode === 'round' ? [styles.tertiary, styles.round] : styles[mode],
         styles[mode],
         {
           [styles.stretch]: stretch,
         },
-        mode === 'tertiary' || mode === 'round' ? null : styles[size]
+        styles[size]
       )}
       {...restProps}
     >

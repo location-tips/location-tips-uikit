@@ -35,6 +35,19 @@
   --button-tertiary-border-hover-color: var(--palette-gray-3);
   --button-tertiary-border-focus-color: var(--palette-gray-3);
   --button-tertiary-border-active-color: var(--palette-gray-2);
+  /* button round */
+  --button-round-enabled-background-color: var(--palette-gray-4);
+  --button-round-disabled-background-color: var(--palette-gray-4);
+  --button-round-hover-background-color: var(--palette-gray-4);
+  --button-round-active-background-color: var(--palette-gray-4);
+  --button-round-enabled-font-color: var(--palette-gray-1);
+  --button-round-disabled-font-color: var(--palette-gray-2);
+  --button-round-hover-font-color: var(--palette-gray-1);
+  --button-round-border-default-color: var(--palette-gray-4);
+  --button-round-border-disabled-color: var(--palette-gray-4);
+  --button-round-border-hover-color: var(--palette-gray-3);
+  --button-round-border-focus-color: var(--palette-gray-3);
+  --button-round-border-active-color: var(--palette-gray-2);
   /* button outlined */
   --button-outlined-enabled-background-color: rgba(255, 255, 255, 0);
   --button-outlined-enabled-border-color: var(--palette-gray-2);
