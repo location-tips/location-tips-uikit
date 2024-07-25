@@ -1,6 +1,7 @@
 :root[data-brand='locationtips'] {
   /* typo */
   --font-family: Poppins, sans-serif;
+  --font-family-secondary: Roboto, sans-serif;
   --font-size-s: 0.875rem;
   --font-size-m: 0.875rem;
   --font-size-l: 1rem;
@@ -51,6 +52,7 @@
   --palette-neutral-120: rgba(20, 20, 20, 1);
   --palette-neutral-130-black: rgba(0, 0, 0, 1);
 
+  --input-regular-border: rgba(0, 0, 0, 0.12);
   /* sizes */
   --whiteSpace-general-_25x: 0.13rem;
   --whiteSpace-general-_5x: 0.25rem;
@@ -69,7 +71,7 @@
   --borderRadius-general-_5x: 0.13rem;
   --borderRadius-general-1x: 0.25rem;
   --borderRadius-general-1_5x: 0.38rem;
-  --borderRadius-general-2x: 1rem;
+  --borderRadius-general-2x: 0.5rem;
   --borderRadius-general-3x: 0.75rem;
   --borderRadius-general-4x: 1rem;
   --borderRadius-general-6x: 1.5rem;

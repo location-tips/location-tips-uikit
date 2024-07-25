@@ -1,11 +1,16 @@
 .fieldDescription {
-  color: var(--input-text-field-enabled-assistive-font-color);
+  color: var(--input-field-enabled-font-color, #747e97);
+  font-family: var(--font-family-secondary, Roboto);
+  font-size: var(--font-size-m, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .fieldDescription.valid {
-  color: var(--input-text-field-valid-assistive-font-color);
+  color: var(--input-field-valid-font-color, #747e97);
 }
 
 .fieldDescription.invalid {
-  color: var(--input-text-field-invalid-assistive-font-color, #dc2020);
+  color: var(--input-field-invalid-assistive-font-color, #dc2020);
 }
