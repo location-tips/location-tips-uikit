@@ -18,6 +18,7 @@
   --button-secondary-medium-borderRadius-default: var(
     --borderRadius-general-4x
   );
+  --button-tertiary-borderRadius-default: var(--borderRadius-general-2x);
   --button-outlined-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
