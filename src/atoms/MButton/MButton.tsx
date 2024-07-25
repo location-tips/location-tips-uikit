@@ -11,7 +11,13 @@ type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > & {
-  mode?: 'primary' | 'secondary' | 'tertiary' | 'outlined' | 'transparent';
+  mode?:
+    | 'primary'
+    | 'secondary'
+    | 'tertiary'
+    | 'round'
+    | 'outlined'
+    | 'transparent';
   after?: ReactNode;
   before?: ReactNode;
   stretch?: boolean;
@@ -37,7 +43,7 @@ export const MButton = ({
         {
           [styles.stretch]: stretch,
         },
-        mode === 'tertiary' ? null : styles[size]
+        styles[size]
       )}
       {...restProps}
     >

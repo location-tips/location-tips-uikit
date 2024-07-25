@@ -1,5 +1,9 @@
 :root[data-platform='i-os'] {
   --layout-screen-padding-horizontal: var(--whiteSpace-general-2x);
+  --button-font-size-default: var(--font-size-l);
+  --button-font-size-medium: var(--font-size-m);
+  --button-font-size-small: var(--font-size-s);
+  --button-font-size-xl: var(--font-size-xl);
   --button-primary-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
@@ -19,6 +23,10 @@
     --borderRadius-general-4x
   );
   --button-tertiary-borderRadius-default: var(--borderRadius-general-2x);
+  --button-tertiary-medium-whiteSpace-gap: var(--whiteSpace-general-_5x);
+  --button-round-size-default: var(--size-general-4x);
+  --button-round-size-small: var(--size-general-3x);
+  --button-round-size-large: var(--size-general-6x);
   --button-outlined-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
