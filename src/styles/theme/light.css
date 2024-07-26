@@ -211,4 +211,7 @@
   --input-radio-checked-outline-hover: var(--palette-active-80);
   --input-radio-checked-outline-active: var(--palette-active-80);
   --input-radio-checked-outline-disabled: var(--palette-neutral-60B);
+  /* badge */
+  --badge-primary-font-color: var(--palette-gray-1);
+  --badge-primary-background-color: var(--palette-gray-4);
 }
