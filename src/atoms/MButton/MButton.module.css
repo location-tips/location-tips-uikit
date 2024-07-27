@@ -42,16 +42,16 @@
   color: var(--button-tertiary-enabled-font-color, #1e222a);
   background: var(--button-tertiary-enabled-background-color, #f4f5f7);
   gap: var(--button-tertiary-medium-whiteSpace-gap, 4px);
-  outline: 1px solid var(--button-tertiary-border-default-color, #f4f5f7);
-  transition: outline 0.2s ease-in-out;
+  border: 1px solid var(--button-tertiary-border-default-color, #f4f5f7);
+  transition: border 0.2s ease-in-out;
 }
 
 .round {
   border-radius: 50%;
   color: var(--button-tertiary-enabled-font-color, #1e222a);
   background: var(--button-round-enabled-background-color, #f4f5f7);
-  outline: 1px solid var(--button-round-border-default-color, #f4f5f7);
-  transition: outline 0.2s ease-in-out;
+  border: 1px solid var(--button-round-border-default-color, #f4f5f7);
+  transition: border 0.2s ease-in-out;
 }
 
 .round span {
@@ -97,7 +97,7 @@
   color: var(--button-tertiary-disabled-font-color, #747e97);
   background: var(--button-tertiary-disabled-background-color, #f4f5f7);
   cursor: default;
-  outline-color: var(--button-tertiary-border-disabled-color, #f4f5f7);
+  border-color: var(--button-tertiary-border-disabled-color, #f4f5f7);
 }
 
 .round:disabled,
@@ -106,7 +106,7 @@
   color: var(--button-round-disabled-font-color, #747e97);
   background: var(--button-round-disabled-background-color, #f4f5f7);
   cursor: default;
-  outline-color: var(--button-round-border-disabled-color, #f4f5f7);
+  border-color: var(--button-round-border-disabled-color, #f4f5f7);
 }
 
 .outlined:disabled,
@@ -138,12 +138,12 @@
 
 .tertiary:hover {
   background: var(--button-tertiary-hover-background-color, #f4f5f7);
-  outline-color: var(--button-tertiary-border-hover-color, #babecb);
+  border-color: var(--button-tertiary-border-hover-color, #babecb);
 }
 
 .round:hover {
   background: var(--button-round-hover-background-color, #f4f5f7);
-  outline-color: var(--button-round-border-hover-color, #babecb);
+  border-color: var(--button-round-border-hover-color, #babecb);
 }
 
 .outlined:hover {
@@ -166,12 +166,12 @@
 
 .tertiary:active {
   background: var(--button-tertiary-active-background-color, #f4f5f7);
-  outline-color: var(--button-tertiary-border-active-color, #747e97);
+  border-color: var(--button-tertiary-border-active-color, #747e97);
 }
 
 .round:active {
   background: var(--button-round-active-background-color, #f4f5f7);
-  outline-color: var(--button-round-border-active-color, #747e97);
+  border-color: var(--button-round-border-active-color, #747e97);
 }
 
 .outlined:active {
