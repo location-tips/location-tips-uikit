@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Health & Wellness/FirstAidKit.svg?react';
+import Icon from '../../../icons/Health_n_Wellness/FirstAidKit.svg?react';
 
 export const MIconFirstAidKit = ({
   mode,

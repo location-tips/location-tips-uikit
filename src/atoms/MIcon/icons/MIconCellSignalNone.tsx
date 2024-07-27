@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/CellSignalNone.svg?react';
+import Icon from '../../../icons/System_n_Devices/CellSignalNone.svg?react';
 
 export const MIconCellSignalNone = ({
   mode,

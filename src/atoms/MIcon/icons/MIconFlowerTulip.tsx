@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/FlowerTulip.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/FlowerTulip.svg?react';
 
 export const MIconFlowerTulip = ({
   mode,

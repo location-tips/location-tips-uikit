@@ -1,10 +1,10 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import MText from '../MText/MText';
 import MFlex from '../MFlex/MFlex';
 
 import MCheckbox from './MCheckbox';
-import React from 'react';
-import MIcon from '../MIcon/MIcon';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
 
 const meta: Meta<typeof MCheckbox> = {
   title: 'Atoms/Form/MCheckbox',
@@ -15,36 +15,21 @@ export default meta;
 
 const labelComponentContent = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={24}
-    />
+    <MIconBracketsSquare mode="regular" width={24} />
     <MText>Label</MText>
   </MFlex>
 );
 
 const descriptionComponentContent = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={16}
-    />
+    <MIconBracketsSquare mode="regular" width={16} />
     <MText>Description</MText>
   </MFlex>
 );
 
 const errorComponentContent = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={16}
-    />
+    <MIconBracketsSquare mode="regular" width={16} />
     <MText>Error</MText>
   </MFlex>
 );

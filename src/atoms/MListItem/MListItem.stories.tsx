@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import MListItem from './MListItem';
 import MFlex from '../MFlex/MFlex';
-import MIcon from '../MIcon/MIcon';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
 import MText from '../MText/MText';
 import React from 'react';
 
@@ -14,12 +14,7 @@ export default meta;
 type Story = StoryObj<typeof MListItem>;
 const item = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={20}
-    />
+    <MIconBracketsSquare mode="regular" width={20} />
     <MText>List Item</MText>
   </MFlex>
 );

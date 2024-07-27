@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/Thermometer.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/Thermometer.svg?react';
 
 export const MIconThermometer = ({
   mode,

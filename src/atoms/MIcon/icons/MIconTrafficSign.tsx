@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/TrafficSign.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/TrafficSign.svg?react';
 
 export const MIconTrafficSign = ({
   mode,

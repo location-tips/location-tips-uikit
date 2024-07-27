@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/BatteryChargingVertical.svg?react';
+import Icon from '../../../icons/System_n_Devices/BatteryChargingVertical.svg?react';
 
 export const MIconBatteryChargingVertical = ({
   mode,

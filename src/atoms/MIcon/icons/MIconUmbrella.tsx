@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/Umbrella.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/Umbrella.svg?react';
 
 export const MIconUmbrella = ({
   mode,

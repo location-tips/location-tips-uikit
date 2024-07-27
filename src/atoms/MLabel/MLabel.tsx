@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import MText from '../MText/MText';
 import styles from './MLabel.module.css';
-import { TComponentStatus } from 'types/TComponentStatus';
+import { TComponentStatus } from '../../types/TComponentStatus';
 
 type LabelProps = React.DetailedHTMLProps<
   React.LabelHTMLAttributes<HTMLLabelElement>,

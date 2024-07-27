@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/PushPin.svg?react';
+import Icon from '../../../icons/Office_n_Editing/PushPin.svg?react';
 
 export const MIconPushPin = ({
   mode,

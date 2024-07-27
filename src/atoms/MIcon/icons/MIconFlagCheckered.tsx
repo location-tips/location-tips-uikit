@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/FlagCheckered.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/FlagCheckered.svg?react';
 
 export const MIconFlagCheckered = ({
   mode,

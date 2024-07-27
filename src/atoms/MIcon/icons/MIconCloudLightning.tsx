@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/CloudLightning.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/CloudLightning.svg?react';
 
 export const MIconCloudLightning = ({
   mode,

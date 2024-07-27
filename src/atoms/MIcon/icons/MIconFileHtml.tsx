@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/FileHtml.svg?react';
+import Icon from '../../../icons/Office_n_Editing/FileHtml.svg?react';
 
 export const MIconFileHtml = ({
   mode,

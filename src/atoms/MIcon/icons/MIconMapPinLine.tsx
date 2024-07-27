@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/MapPinLine.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/MapPinLine.svg?react';
 
 export const MIconMapPinLine = ({
   mode,

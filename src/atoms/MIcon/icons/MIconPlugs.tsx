@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/Plugs.svg?react';
+import Icon from '../../../icons/System_n_Devices/Plugs.svg?react';
 
 export const MIconPlugs = ({
   mode,

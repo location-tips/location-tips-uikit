@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Security & Warnings/LockOpen.svg?react';
+import Icon from '../../../icons/Security_n_Warnings/LockOpen.svg?react';
 
 export const MIconLockOpen = ({
   mode,

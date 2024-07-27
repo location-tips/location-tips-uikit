@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/FolderPlus.svg?react';
+import Icon from '../../../icons/Office_n_Editing/FolderPlus.svg?react';
 
 export const MIconFolderPlus = ({
   mode,

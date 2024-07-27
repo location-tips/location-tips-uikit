@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/Funnel.svg?react';
+import Icon from '../../../icons/Office_n_Editing/Funnel.svg?react';
 
 export const MIconFunnel = ({
   mode,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/WifiSlash.svg?react';
+import Icon from '../../../icons/System_n_Devices/WifiSlash.svg?react';
 
 export const MIconWifiSlash = ({
   mode,

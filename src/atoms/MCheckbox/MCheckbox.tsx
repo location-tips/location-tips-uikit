@@ -12,7 +12,7 @@ import MFieldDescription from '../MFieldDescription/MFieldDescription';
 import { TComponentStatus } from '../../types/TComponentStatus';
 
 import styles from './MCheckbox.module.css';
-import MIcon from '../MIcon/MIcon';
+import { MIconCheck } from '../MIcon/icons/MIconCheck';
 
 type ChexkboxProps = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,
@@ -64,9 +64,7 @@ export const MCheckbox = ({
           {icon ? (
             icon
           ) : (
-            <MIcon
-              catalog="System & Devices"
-              name="Check"
+            <MIconCheck
               mode="bold"
               width={10}
               color={status === 'invalid' ? '#dc2020' : '#ffffff'}

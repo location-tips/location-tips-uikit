@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Security & Warnings/WarningOctagon.svg?react';
+import Icon from '../../../icons/Security_n_Warnings/WarningOctagon.svg?react';
 
 export const MIconWarningOctagon = ({
   mode,

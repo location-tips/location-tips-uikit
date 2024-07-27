@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/DotsThreeOutline.svg?react';
+import Icon from '../../../icons/System_n_Devices/DotsThreeOutline.svg?react';
 
 export const MIconDotsThreeOutline = ({
   mode,

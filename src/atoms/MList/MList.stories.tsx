@@ -1,10 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import React from 'react';
 import MList from './MList';
 import MFlex from '../MFlex/MFlex';
-import MIcon from '../MIcon/MIcon';
+import { MIconFinnTheHuman } from '../MIcon/icons/MIconFinnTheHuman';
+import { MIconArrowFatLinesRight } from '../MIcon/icons/MIconArrowFatLinesRight';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
 import MText from '../MText/MText';
-import React from 'react';
 
 const meta: Meta<typeof MList> = {
   title: 'Atoms/Form/MList',
@@ -13,29 +15,19 @@ const meta: Meta<typeof MList> = {
 
 const item = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={20}
-    />
+    <MIconBracketsSquare mode="regular" width={20} />
     <MText size={'m'}>List Item</MText>
   </MFlex>
 );
 const item1 = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Arrows"
-      name="ArrowFatLinesRight"
-      mode="regular"
-      width={20}
-    />
+    <MIconArrowFatLinesRight mode="regular" width={20} />
     <MText size={'m'}>List Item</MText>
   </MFlex>
 );
 const item2 = () => (
   <MFlex gap="s">
-    <MIcon catalog="Games" name="FinnTheHuman" mode="regular" width={20} />
+    <MIconFinnTheHuman mode="regular" width={20} />
     <MText size={'m'}>List Item</MText>
   </MFlex>
 );
@@ -78,10 +70,8 @@ export const Basic: Story = {
       },
     },
     showDivider: {
-      options: {
-        control: {
-          type: 'boolean',
-        },
+      control: {
+        type: 'boolean',
       },
     },
   },

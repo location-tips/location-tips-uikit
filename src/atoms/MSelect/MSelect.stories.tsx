@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import MSelect from './MSelect';
 import MFlex from '../MFlex/MFlex';
-import MIcon from '../MIcon/MIcon';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
+import { MIconArrowFatLinesRight } from '../MIcon/icons/MIconArrowFatLinesRight';
 import MText from '../MText/MText';
 import React from 'react';
 
@@ -13,34 +14,19 @@ const meta: Meta<typeof MSelect> = {
 
 const item = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={20}
-    />
+    <MIconBracketsSquare mode="regular" width={20} />
     <MText size={'m'}>List Item</MText>
   </MFlex>
 );
 const item1 = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Arrows"
-      name="ArrowFatLinesRight"
-      mode="regular"
-      width={20}
-    />
+    <MIconArrowFatLinesRight mode="regular" width={20} />
     <MText size={'m'}>List Item1</MText>
   </MFlex>
 );
 const item2 = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Arrows"
-      name="ArrowFatLinesRight"
-      mode="regular"
-      width={20}
-    />
+    <MIconArrowFatLinesRight mode="regular" width={20} />
     <MText size={'m'}>List Item2</MText>
   </MFlex>
 );

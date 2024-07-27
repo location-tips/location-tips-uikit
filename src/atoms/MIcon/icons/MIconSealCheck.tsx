@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Security & Warnings/SealCheck.svg?react';
+import Icon from '../../../icons/Security_n_Warnings/SealCheck.svg?react';
 
 export const MIconSealCheck = ({
   mode,

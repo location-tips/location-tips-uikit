@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/SteeringWheel.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/SteeringWheel.svg?react';
 
 export const MIconSteeringWheel = ({
   mode,

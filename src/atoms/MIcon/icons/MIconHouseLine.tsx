@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/HouseLine.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/HouseLine.svg?react';
 
 export const MIconHouseLine = ({
   mode,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/Flower.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/Flower.svg?react';
 
 export const MIconFlower = ({
   mode,

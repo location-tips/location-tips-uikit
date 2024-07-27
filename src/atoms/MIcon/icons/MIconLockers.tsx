@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/Lockers.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/Lockers.svg?react';
 
 export const MIconLockers = ({
   mode,

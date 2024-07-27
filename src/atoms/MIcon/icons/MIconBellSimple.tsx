@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/BellSimple.svg?react';
+import Icon from '../../../icons/System_n_Devices/BellSimple.svg?react';
 
 export const MIconBellSimple = ({
   mode,

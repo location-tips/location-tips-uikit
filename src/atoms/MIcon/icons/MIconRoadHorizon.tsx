@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/RoadHorizon.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/RoadHorizon.svg?react';
 
 export const MIconRoadHorizon = ({
   mode,

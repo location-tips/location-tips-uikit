@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Health & Wellness/Pulse.svg?react';
+import Icon from '../../../icons/Health_n_Wellness/Pulse.svg?react';
 
 export const MIconPulse = ({
   mode,

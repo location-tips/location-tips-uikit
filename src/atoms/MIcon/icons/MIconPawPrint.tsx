@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/PawPrint.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/PawPrint.svg?react';
 
 export const MIconPawPrint = ({
   mode,

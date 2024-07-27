@@ -11,14 +11,15 @@ export default {
           { tsconfig: '<rootDir>/tsconfig.spec.json' },
       ],
       "^.+\\.css$": "<rootDir>/__mocks__/cssTransform.cjs",
-      "^(?!.*\\.(js|jsx|css|scss|json)$)": "<rootDir>/__mocks__/fileTransform.cjs"
+      "^(?!.*\\.(js|jsx|css|scss|json)$)": "<rootDir>/__mocks__/fileTransform.cjs",
   },
   transformIgnorePatterns: [
     "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$",
     "^.+\\.module\\.(css|sass|scss)$"
   ],
   moduleNameMapper: {
-    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+    "^.+\\.svg\\?react$": "<rootDir>/__mocks__/svgTransform.js"
   },
   testEnvironment: 'jsdom',
   /**

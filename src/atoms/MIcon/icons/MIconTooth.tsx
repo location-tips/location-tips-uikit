@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Health & Wellness/Tooth.svg?react';
+import Icon from '../../../icons/Health_n_Wellness/Tooth.svg?react';
 
 export const MIconTooth = ({
   mode,
