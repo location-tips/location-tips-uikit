@@ -3,8 +3,8 @@ import MFlex from '../MFlex/MFlex';
 import clsx from 'clsx';
 import styles from './MGallery.module.css';
 import { MButton } from '../MButton/MButton';
-import { MIconCaretLeft } from '../../atoms/MIcon/icons/MIconCaretLeft';
-import { MIconCaretRight } from '../../atoms/MIcon/icons/MIconCaretRight';
+import { MIconCaretLeft } from '../MIcon/icons/MIconCaretLeft';
+import { MIconCaretRight } from '../MIcon/icons/MIconCaretRight';
 
 type MGalleryProps = {
   slides: ReactNode[];

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import React from 'react';
 import MGallery from './MGallery';
-import MIcon from '../MIcon/MIcon';
+import { MIconBookmarkSimple } from '../MIcon/icons/MIconBookmarkSimple';
 import MButton from '../MButton/MButton';
 
 const meta: Meta<typeof MGallery> = {
@@ -25,14 +25,7 @@ export const Basic: Story = {
       <MButton>Click me</MButton>,
     ],
     header: ['Foo ', 'Bar ', 'Baz '],
-    tools: [
-      <MIcon
-        catalog="Education"
-        name="BookmarkSimple"
-        mode="regular"
-        width={24}
-      />,
-    ],
+    tools: [<MIconBookmarkSimple mode="regular" width={24} />],
     footer: ['Foo ', 'Bar ', 'Baz '],
   },
   argTypes: {

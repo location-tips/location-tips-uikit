@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import MBadge from './MBadge';
-import MIcon from '../MIcon/MIcon';
+import { MIconStar } from '../MIcon/icons/MIconStar';
 import React from 'react';
 
 const meta: Meta<typeof MBadge> = {
@@ -17,7 +17,7 @@ export const Primary: Story = {
   args: {
     children: (
       <>
-        <MIcon catalog="Communication" name="Star" mode="regular" width={20} />
+        <MIconStar mode="regular" width={20} />
         4.8
       </>
     ),
@@ -36,7 +36,7 @@ export const Transparent: Story = {
   args: {
     children: (
       <>
-        <MIcon catalog="Communication" name="Star" mode="regular" width={16} />
+        <MIconStar mode="regular" width={16} />
         4.8
       </>
     ),
