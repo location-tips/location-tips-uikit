@@ -3,7 +3,8 @@ import MFlex from '../MFlex/MFlex';
 import clsx from 'clsx';
 import styles from './MGallery.module.css';
 import { MButton } from '../MButton/MButton';
-import MIcon from '../MIcon/MIcon';
+import { MIconCaretLeft } from '../../atoms/MIcon/icons/MIconCaretLeft';
+import { MIconCaretRight } from '../../atoms/MIcon/icons/MIconCaretRight';
 
 type MGalleryProps = {
   slides: ReactNode[];
@@ -101,12 +102,7 @@ export const MGallery = ({
             mode="round"
             onClick={prevSlide}
           >
-            <MIcon
-              catalog="Arrows"
-              name="CaretLeft"
-              mode="regular"
-              width={32}
-            />
+            <MIconCaretLeft mode="regular" width={32} />
           </MButton>
         )}
         {currentIndex < slides.length - 1 && (
@@ -118,12 +114,7 @@ export const MGallery = ({
             mode="round"
             onClick={nextSlide}
           >
-            <MIcon
-              catalog="Arrows"
-              name="CaretRight"
-              mode="regular"
-              width={32}
-            />
+            <MIconCaretRight mode="regular" width={32} />
           </MButton>
         )}
         {tools && <div className={clsx(styles.tools)}>{tools}</div>}
