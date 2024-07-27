@@ -39,11 +39,11 @@ export const MGallery = ({
     );
   };
 
-  const handleTouchStart = (e: React.TouchEvent): void => {
+  const handleTouchStart = (e: TouchEvent): void => {
     setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const handleTouchMove = (e: React.TouchEvent): void => {
+  const handleTouchMove = (e: TouchEvent): void => {
     setTouchEnd(e.targetTouches[0].clientX);
   };
 
@@ -60,13 +60,13 @@ export const MGallery = ({
   useEffect(() => {
     const slider = sliderRef.current;
     if (slider) {
-      slider.addEventListener('touchstart', handleTouchStart as any);
-      slider.addEventListener('touchmove', handleTouchMove as any);
+      slider.addEventListener('touchstart', handleTouchStart);
+      slider.addEventListener('touchmove', handleTouchMove);
       slider.addEventListener('touchend', handleTouchEnd);
 
       return () => {
-        slider.removeEventListener('touchstart', handleTouchStart as any);
-        slider.removeEventListener('touchmove', handleTouchMove as any);
+        slider.removeEventListener('touchstart', handleTouchStart);
+        slider.removeEventListener('touchmove', handleTouchMove);
         slider.removeEventListener('touchend', handleTouchEnd);
       };
     }
