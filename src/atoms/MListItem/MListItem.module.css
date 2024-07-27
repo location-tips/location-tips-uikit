@@ -15,12 +15,12 @@
 
 /*hover*/
 .item:hover {
-  border-radius: var(--button-outlined-medium-borderRadius-default, 10px);
+  /* border-radius: var(--button-outlined-medium-borderRadius-default, 10px); */
   background: var(--divider-hover, #eeeeee);
 }
 
 /*active*/
 .item:active {
-  border-radius: var(--button-outlined-medium-borderRadius-default, 10px);
+  /* border-radius: var(--button-outlined-medium-borderRadius-default, 10px); */
   background: var(--divider-active, #cccccc);
 }

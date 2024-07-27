@@ -17,4 +17,6 @@ export { MCard } from './MCard';
 export { MSwitch } from './MSwitch';
 export { MListItem } from './MListItem';
 export { MFieldDescription } from './MFieldDescription';
+export { MThemeSelector } from './MThemeSelector';
+export { MTheme } from './MTheme';
 // export * from './MIcon';

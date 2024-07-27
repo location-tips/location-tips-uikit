@@ -13,7 +13,6 @@ type Story = StoryObj<typeof MLabel>;
 export const Basic: Story = {
   args: {
     children: 'Label',
-    placeholder: 'Placeholder',
   },
 
   argTypes: {

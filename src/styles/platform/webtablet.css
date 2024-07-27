@@ -1,5 +1,9 @@
 :root[data-platform='web-tablet'] {
   --layout-screen-padding-horizontal: var(--whiteSpace-general-4x);
+  --button-font-size-default: var(--font-size-l);
+  --button-font-size-medium: var(--font-size-m);
+  --button-font-size-small: var(--font-size-s);
+  --button-font-size-xl: var(--font-size-xl);
   --button-primary-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
@@ -7,7 +11,7 @@
     --whiteSpace-general-1_5x
   );
   --button-primary-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
-  --button-primary-medium-borderRadius-default: var(--borderRadius-general-2x);
+  --button-primary-medium-borderRadius-default: var(--borderRadius-general-4x);
   --button-secondary-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
@@ -16,8 +20,13 @@
   );
   --button-secondary-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
   --button-secondary-medium-borderRadius-default: var(
-    --borderRadius-general-2x
+    --borderRadius-general-4x
   );
+  --button-tertiary-borderRadius-default: var(--borderRadius-general-2x);
+  --button-tertiary-medium-whiteSpace-gap: var(--whiteSpace-general-_5x);
+  --button-round-size-default: var(--size-general-4x);
+  --button-round-size-small: var(--size-general-3x);
+  --button-round-size-large: var(--size-general-6x);
   --button-outlined-medium-whiteSpace-padding-horizontal: var(
     --whiteSpace-general-2x
   );
@@ -25,7 +34,10 @@
     --whiteSpace-general-1_5x
   );
   --button-outlined-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
-  --button-outlined-medium-borderRadius-default: var(--borderRadius-general-2x);
+  --button-outlined-medium-borderRadius-default: var(--borderRadius-general-4x);
+  --button-transparent-medium-borderRadius-default: var(
+    --borderRadius-general-4x
+  );
   --button-transparent-medium-whiteSpace-gap: var(--whiteSpace-general-1x);
   --input-field-whiteSpace-field-padding-horizontal: var(
     --whiteSpace-general-2x
@@ -37,5 +49,25 @@
   --input-field-whiteSpace-label-gap: var(--whiteSpace-general-1x);
   --input-field-whiteSpace-caption-gap: var(--whiteSpace-general-1x);
   --input-field-whiteSpace-assistive-gap: var(--whiteSpace-general-1x);
-  --input-field-borderRadius-default: var(--borderRadius-general-2x);
+  --input-field-borderRadius-default: var(--borderRadius-general-4x);
+  /* badge */
+  --badge-font-size: var(--font-size-l);
+  --badge-whiteSpace-gap: var(--whiteSpace-general-_5x);
+  --badge-primary-padding: var(--size-general-_75x);
+  --badge-primary-border-radius: var(--borderRadius-general-2x);
+  /* flex */
+  --flex-gap-default: var(--whiteSpace-general-1x);
+  --flex-gap-xs: var(--whiteSpace-general-_5x);
+  --flex-gap-s: var(--whiteSpace-general-1x);
+  --flex-gap-m: var(--whiteSpace-general-1_5x);
+  --flex-gap-l: var(--whiteSpace-general-2x);
+  --flex-gap-xl: var(--whiteSpace-general-2_5x);
+  --flex-gap-2xl: var(--whiteSpace-general-3x);
+  --flex-gap-3xl: var(--whiteSpace-general-3_5x);
+  --flex-gap-4xl: var(--whiteSpace-general-4x);
+
+  /* gallery */
+  --gallery-container-border-radius: var(--borderRadius-general-5x);
+  --gallery-slider-button-margin: var(--size-general-1_5x);
+  --gallery-tool-margin: var(--size-general-1_5x);
 }

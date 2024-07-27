@@ -5,4 +5,18 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--input-field-whiteSpace-label-gap, 8px);
+  color: var(--input-field-enabled-font-color, #747e97);
+  font-family: var(--font-family-secondary, Roboto);
+  font-size: var(--font-size-l, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.caption.valid {
+  color: var(--input-field-valid-font-color, #747e97);
+}
+
+.caption.invalid {
+  color: var(--input-field-invalid-assistive-font-color, #dc2020);
 }

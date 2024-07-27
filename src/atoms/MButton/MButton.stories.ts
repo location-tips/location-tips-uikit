@@ -13,16 +13,24 @@ type Story = StoryObj<typeof MButton>;
 export const Basic: Story = {
   args: {
     disabled: false,
-    children: 'BUTTON',
+    children: 'Create',
     mode: 'primary',
-    before: 'B',
-    after: 'A',
+    before: '+',
+    after: '',
+    size: 'm',
   },
 
   argTypes: {
     disabled: { control: { type: 'boolean' } },
     mode: {
-      options: ['primary', 'secondary', 'outlined', 'transparent'],
+      options: [
+        'primary',
+        'secondary',
+        'tertiary',
+        'round',
+        'outlined',
+        'transparent',
+      ],
       control: { type: 'select' },
     },
     before: {
@@ -30,6 +38,10 @@ export const Basic: Story = {
     },
     after: {
       control: { type: 'text' },
+    },
+    size: {
+      options: ['s', 'm', 'l'],
+      control: { type: 'select' },
     },
   },
 };
