@@ -60,7 +60,9 @@
   --whiteSpace-general-1x: 0.5rem;
   --whiteSpace-general-1_5x: 0.75rem;
   --whiteSpace-general-2x: 1rem;
+  --whiteSpace-general-2_5x: 1.25rem;
   --whiteSpace-general-3x: 1.5rem;
+  --whiteSpace-general-3_5x: 1.75rem;
   --whiteSpace-general-4x: 2rem;
   --whiteSpace-general-6x: 3rem;
   --whiteSpace-general-8x: 4rem;
@@ -75,6 +77,7 @@
   --borderRadius-general-2x: 0.5rem;
   --borderRadius-general-3x: 0.75rem;
   --borderRadius-general-4x: 1rem;
+  --borderRadius-general-5x: 1.25rem;
   --borderRadius-general-6x: 1.5rem;
   --borderRadius-general-8x: 2rem;
   --borderRadius-general-9x: 2.25rem;
@@ -87,7 +90,9 @@
   --size-general-1x: 0.5rem;
   --size-general-1_5x: 0.75rem;
   --size-general-2x: 1rem;
+  --size-general-2_5x: 1.25rem;
   --size-general-3x: 1.5rem;
+  --size-general-3_5x: 1.75rem;
   --size-general-4x: 2rem;
   --size-general-6x: 3rem;
   --size-general-8x: 4rem;
