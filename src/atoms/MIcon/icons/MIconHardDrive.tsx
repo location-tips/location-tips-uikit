@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/HardDrive.svg?react';
+import Icon from '../../../icons/System_n_Devices/HardDrive.svg?react';
 
 export const MIconHardDrive = ({
   mode,

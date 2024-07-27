@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Security & Warnings/ProhibitInset.svg?react';
+import Icon from '../../../icons/Security_n_Warnings/ProhibitInset.svg?react';
 
 export const MIconProhibitInset = ({
   mode,

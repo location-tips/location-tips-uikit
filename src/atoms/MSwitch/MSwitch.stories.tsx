@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import MSwitch from './MSwitch';
-import MIcon from '../MIcon/MIcon';
+import { MIconCheck } from '../MIcon/icons/MIconCheck';
 
 const meta: Meta<typeof MSwitch> = {
   title: 'Atoms/Form/MSwitch',
@@ -11,9 +11,7 @@ const meta: Meta<typeof MSwitch> = {
 
 export default meta;
 
-const leftIconContent = () => (
-  <MIcon catalog="System & Devices" name="Check" mode="bold" width={10} />
-);
+const leftIconContent = () => <MIconCheck mode="bold" width={10} />;
 
 const argTypes = {
   borderType: {

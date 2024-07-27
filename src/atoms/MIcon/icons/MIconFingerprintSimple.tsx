@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Security & Warnings/FingerprintSimple.svg?react';
+import Icon from '../../../icons/Security_n_Warnings/FingerprintSimple.svg?react';
 
 export const MIconFingerprintSimple = ({
   mode,

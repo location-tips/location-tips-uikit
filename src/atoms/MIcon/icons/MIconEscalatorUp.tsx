@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/EscalatorUp.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/EscalatorUp.svg?react';
 
 export const MIconEscalatorUp = ({
   mode,

@@ -5,7 +5,7 @@ import React, {
 } from 'react';
 import clsx from 'clsx';
 import styles from './MButton.module.css';
-import { TComponentSize } from 'types/TComponentSize';
+import { TComponentSize } from '../../types/TComponentSize';
 
 type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,

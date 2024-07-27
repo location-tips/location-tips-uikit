@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/Sparkle.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/Sparkle.svg?react';
 
 export const MIconSparkle = ({
   mode,

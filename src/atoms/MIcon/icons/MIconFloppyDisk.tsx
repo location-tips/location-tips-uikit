@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/FloppyDisk.svg?react';
+import Icon from '../../../icons/Office_n_Editing/FloppyDisk.svg?react';
 
 export const MIconFloppyDisk = ({
   mode,

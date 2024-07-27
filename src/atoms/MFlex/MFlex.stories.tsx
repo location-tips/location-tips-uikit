@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import MFlex from './MFlex';
 import React from 'react';
-import MIcon from '../MIcon/MIcon';
+import MFlex from './MFlex';
+import { MIconDiceOne } from '../MIcon/icons/MIconDiceOne';
+import { MIconDiceTwo } from '../MIcon/icons/MIconDiceTwo';
+import { MIconDiceThree } from '../MIcon/icons/MIconDiceThree';
 
 const meta: Meta<typeof MFlex> = {
   title: 'Atoms/Layout/MFlex',
@@ -21,9 +23,9 @@ export const Basic: Story = {
     wrap: 'wrap',
     children: (
       <>
-        <MIcon catalog="Games" name="DiceOne" mode="regular" width={24} />
-        <MIcon catalog="Games" name="DiceTwo" mode="regular" width={24} />
-        <MIcon catalog="Games" name="DiceThree" mode="regular" width={24} />
+        <MIconDiceOne mode="regular" width={24} />
+        <MIconDiceTwo mode="regular" width={24} />
+        <MIconDiceThree mode="regular" width={24} />
       </>
     ),
   },

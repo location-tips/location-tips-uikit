@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/Rocket.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/Rocket.svg?react';
 
 export const MIconRocket = ({
   mode,

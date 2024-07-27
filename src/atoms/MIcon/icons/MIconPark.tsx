@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Maps & Travel/Park.svg?react';
+import Icon from '../../../icons/Maps_n_Travel/Park.svg?react';
 
 export const MIconPark = ({
   mode,

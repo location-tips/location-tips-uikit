@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 import ReactDOMServer from 'react-dom/server';
 import MDropdown from '../MDropdown/MDropdown';
-import MIcon from '../MIcon/MIcon';
+import { MIconCaretDown } from '../MIcon/icons/MIconCaretDown';
 import MList, { SelectOption } from '../MList/MList';
 import { ListItemProps } from '../MListItem/MListItem';
 import { MButton } from '../MButton/MButton';
@@ -62,9 +62,7 @@ export const MSelect = ({ options }: SelectComponentProps) => {
         stretch
         mode={'outlined'}
         onClick={handleClick}
-        after={
-          <MIcon catalog="Arrows" name="CaretDown" mode="regular" width={20} />
-        }
+        after={<MIconCaretDown mode="regular" width={20} />}
       >
         {inputValue}
       </MButton>

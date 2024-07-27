@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import MTabs from './MTabs';
-import MIcon from '../MIcon/MIcon';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
 import React from 'react';
 
 const meta: Meta<typeof MTabs> = {
@@ -11,14 +11,7 @@ const meta: Meta<typeof MTabs> = {
 
 export default meta;
 type Story = StoryObj<typeof MTabs>;
-const icon = () => (
-  <MIcon
-    catalog="Development"
-    name="BracketsSquare"
-    mode="regular"
-    width={20}
-  />
-);
+const icon = () => <MIconBracketsSquare mode="regular" width={20} />;
 export const Basic: Story = {
   args: {
     items: [

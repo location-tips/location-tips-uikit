@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Health & Wellness/Lifebuoy.svg?react';
+import Icon from '../../../icons/Health_n_Wellness/Lifebuoy.svg?react';
 
 export const MIconLifebuoy = ({
   mode,

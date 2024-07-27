@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import MRadio from './MRadio';
-import MIcon from '../MIcon/MIcon';
+import { MIconBracketsSquare } from '../MIcon/icons/MIconBracketsSquare';
 import MText from '../MText/MText';
 import MFlex from '../MFlex/MFlex';
 import React from 'react';
@@ -15,24 +15,14 @@ export default meta;
 
 const descriptionComponentContent = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={20}
-    />
+    <MIconBracketsSquare mode="regular" width={20} />
     <MText>Description</MText>
   </MFlex>
 );
 
 const errorComponentContent = () => (
   <MFlex gap="s">
-    <MIcon
-      catalog="Development"
-      name="BracketsSquare"
-      mode="regular"
-      width={20}
-    />
+    <MIconBracketsSquare mode="regular" width={20} />
     <MText>Error</MText>
   </MFlex>
 );

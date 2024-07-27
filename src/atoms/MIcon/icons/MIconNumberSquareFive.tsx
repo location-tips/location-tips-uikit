@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Math & Finance/NumberSquareFive.svg?react';
+import Icon from '../../../icons/Math_n_Finance/NumberSquareFive.svg?react';
 
 export const MIconNumberSquareFive = ({
   mode,

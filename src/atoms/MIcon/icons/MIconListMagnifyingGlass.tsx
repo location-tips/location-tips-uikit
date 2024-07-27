@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/ListMagnifyingGlass.svg?react';
+import Icon from '../../../icons/System_n_Devices/ListMagnifyingGlass.svg?react';
 
 export const MIconListMagnifyingGlass = ({
   mode,

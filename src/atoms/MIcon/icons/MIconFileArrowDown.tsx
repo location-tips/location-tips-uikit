@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Office & Editing/FileArrowDown.svg?react';
+import Icon from '../../../icons/Office_n_Editing/FileArrowDown.svg?react';
 
 export const MIconFileArrowDown = ({
   mode,

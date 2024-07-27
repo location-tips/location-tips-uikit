@@ -2,8 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "module": "commonjs",
+    "module": "ESNext",
+    "allowJs": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
     "rootDir": ".",
     "declaration": true,
     "types": [

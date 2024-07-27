@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/BluetoothConnected.svg?react';
+import Icon from '../../../icons/System_n_Devices/BluetoothConnected.svg?react';
 
 export const MIconBluetoothConnected = ({
   mode,

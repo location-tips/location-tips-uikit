@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/TreeEvergreen.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/TreeEvergreen.svg?react';
 
 export const MIconTreeEvergreen = ({
   mode,

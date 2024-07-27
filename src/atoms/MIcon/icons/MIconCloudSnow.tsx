@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/CloudSnow.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/CloudSnow.svg?react';
 
 export const MIconCloudSnow = ({
   mode,

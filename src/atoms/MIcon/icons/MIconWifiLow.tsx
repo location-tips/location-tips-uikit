@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/System & Devices/WifiLow.svg?react';
+import Icon from '../../../icons/System_n_Devices/WifiLow.svg?react';
 
 export const MIconWifiLow = ({
   mode,

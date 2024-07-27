@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconModeIndex, MIconProps } from '../types';
-import Icon from '../../../icons/Weather & Nature/MoonStars.svg?react';
+import Icon from '../../../icons/Weather_n_Nature/MoonStars.svg?react';
 
 export const MIconMoonStars = ({
   mode,

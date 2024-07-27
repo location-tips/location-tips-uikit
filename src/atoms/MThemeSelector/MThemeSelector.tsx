@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import MList from '../MList/MList';
-import type { SelectOption } from '../MList/MList';
-import MButton from '../MButton/MButton';
-import styles from './MThemeSelector.module.css';
-import { MDropdown } from '../MDropdown/MDropdown';
-import type { MDropdownProps } from '../MDropdown/MDropdown';
-import type { ListItemProps } from '../MListItem/MListItem';
+import { MList } from '../MList';
+import { MButton } from '../MButton';
+import { MDropdown } from '../MDropdown';
+import type { SelectOption } from '../MList';
+import type { MDropdownProps } from '../MDropdown';
+import type { ListItemProps } from '../MListItem';
 import { MIconMoon } from '../MIcon/icons/MIconMoon';
 import { MIconSun } from '../MIcon/icons/MIconSun';
+import styles from './MThemeSelector.module.css';
 
 type MThemeSelectorProps = Partial<Omit<MDropdownProps, 'dropdownContent'>> & {
   onSelectedTheme?: (theme: string) => void;
