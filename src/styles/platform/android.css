@@ -70,4 +70,16 @@
   --gallery-container-border-radius: var(--borderRadius-general-5x);
   --gallery-slider-button-margin: var(--size-general-1_5x);
   --gallery-tool-margin: var(--size-general-1_5x);
+
+  /* card radius */
+  --border-radius-none: 0;
+  --border-radius-default: var(--whiteSpace-general-1x);
+  --border-radius-xs: var(--whiteSpace-general-_5x);
+  --border-radius-s: var(--whiteSpace-general-1x);
+  --border-radius-m: var(--whiteSpace-general-1_5x);
+  --border-radius-l: var(--whiteSpace-general-2x);
+  --border-radius-xl: var(--whiteSpace-general-2_5x);
+  --border-radius-2xl: var(--whiteSpace-general-3x);
+  --border-radius-3xl: var(--whiteSpace-general-3_5x);
+  --border-radius-4xl: var(--whiteSpace-general-4x);
 }
