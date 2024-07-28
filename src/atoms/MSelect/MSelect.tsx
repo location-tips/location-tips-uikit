@@ -11,6 +11,8 @@ import { MIconCaretDown } from '../MIcon/icons/MIconCaretDown';
 import MList, { SelectOption } from '../MList/MList';
 import { ListItemProps } from '../MListItem/MListItem';
 import { MButton } from '../MButton/MButton';
+import clsx from 'clsx';
+import styles from './MSelect.module.css';
 
 type MSelectOption = ListItemProps & SelectOption;
 
@@ -61,6 +63,7 @@ export const MSelect = ({ options }: SelectComponentProps) => {
       <MButton
         stretch
         mode={'outlined'}
+        className={clsx(styles.selectButton)}
         onClick={handleClick}
         after={<MIconCaretDown mode="regular" width={20} />}
       >

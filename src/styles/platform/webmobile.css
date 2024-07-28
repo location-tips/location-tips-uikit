@@ -70,4 +70,9 @@
   --gallery-container-border-radius: var(--borderRadius-general-5x);
   --gallery-slider-button-margin: var(--size-general-1_5x);
   --gallery-tool-margin: var(--size-general-1_5x);
+
+  /* textarea */
+  --textarea-font-size: var(--font-size-l);
+  --textarea-counter-font-size: var(--font-size-s);
+  --textarea-container-has-counter-padding-bottom: var(--size-general-4x);
 }
