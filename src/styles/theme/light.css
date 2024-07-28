@@ -214,4 +214,6 @@
   /* badge */
   --badge-primary-font-color: var(--palette-gray-1);
   --badge-primary-background-color: var(--palette-gray-4);
+  /* textarea */
+  --textarea-scrollbar-color: var(--palette-gray-3);
 }

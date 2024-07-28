@@ -12,6 +12,7 @@ export type MDropdownProps = DetailedHTMLProps<
   position?: 'top' | 'bottom';
   align?: 'left' | 'right';
   stretch: boolean;
+  noPadding?: boolean;
   dropdownContentClassName?: string;
 };
 
@@ -23,6 +24,7 @@ export const MDropdown = ({
   stretch = false,
   dropdownContent,
   className,
+  noPadding = false,
   dropdownContentClassName,
   ...props
 }: MDropdownProps) => {
@@ -30,6 +32,7 @@ export const MDropdown = ({
     <div className={clsx(styles.dropdownContainer)} {...props}>
       {children}
       <MCard
+        noPadding={noPadding}
         className={clsx(
           styles.dropdown,
           { [styles.open]: open },

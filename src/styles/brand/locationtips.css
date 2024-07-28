@@ -2,7 +2,8 @@
   /* typo */
   --font-family: Poppins, sans-serif;
   --font-family-secondary: Roboto, sans-serif;
-  --font-size-s: 0.625rem;
+  --font-size-xs: 0.625rem;
+  --font-size-s: 0.75rem;
   --font-size-m: 0.875rem;
   --font-size-l: 1rem;
   --font-size-xl: 1.25rem;
