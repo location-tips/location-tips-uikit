@@ -82,4 +82,9 @@
   --border-radius-2xl: var(--borderRadius-general-3x);
   --border-radius-3xl: var(--borderRadius-general-3_5x);
   --border-radius-4xl: var(--borderRadius-general-4x);
+
+  /* textarea */
+  --textarea-font-size: var(--font-size-l);
+  --textarea-counter-font-size: var(--font-size-s);
+  --textarea-container-has-counter-padding-bottom: var(--size-general-4x);
 }
