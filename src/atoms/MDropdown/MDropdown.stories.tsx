@@ -51,7 +51,7 @@ export const Basic: Story = {
     }
 
     return (
-      <MDropdown {...args}>
+      <MDropdown {...args} onClose={() => updateArgs({ open: false })}>
         <MButton onClick={onClick}>Open dropdown</MButton>
       </MDropdown>
     );

@@ -9,12 +9,12 @@ export type SelectOption = ListItemProps & {
 
 type ListComponentProps = {
   options?: SelectOption[];
-  showDivider: boolean;
+  showDivider?: boolean;
   onChoose?: (option: SelectOption) => void;
 };
 export const MList = ({
   options = [],
-  showDivider,
+  showDivider = false,
   onChoose,
 }: ListComponentProps) => {
   return (

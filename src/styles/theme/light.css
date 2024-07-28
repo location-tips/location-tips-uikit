@@ -62,10 +62,10 @@
   --button-outlined-disabled-border-color: var(--palette-gray-3);
   --button-outlined-disabled-font-color: var(--palette-gray-4);
   /* button transparent */
-  --button-transparent-enabled-font-color: var(--palette-neutral-10-white);
-  --button-transparent-hover-font-color: var(--palette-neutral-10-white);
-  --button-transparent-active-font-color: var(--palette-neutral-10-white);
-  --button-transparent-disabled-font-color: var(--palette-gray-4);
+  --button-transparent-enabled-font-color: var(--palette-gray-1);
+  --button-transparent-hover-font-color: var(--palette-black);
+  --button-transparent-active-font-color: var(--palette-gray-1);
+  --button-transparent-disabled-font-color: var(--palette-gray-3);
   /* input regular */
   --input-field-enabled-label-font-color: var(--palette-neutral-130-black);
   --input-field-enabled-assistive-font-color: var(--palette-neutral-130-black);
