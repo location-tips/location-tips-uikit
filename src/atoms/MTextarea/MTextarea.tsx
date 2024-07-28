@@ -21,31 +21,29 @@ type TextareaProps = DetailedHTMLProps<
   HTMLTextAreaElement
 > &
   Partial<TComponentStatus> & {
-    header?: ReactNode;
-    footer?: ReactNode;
+    label?: ReactNode;
+    caption?: ReactNode;
+    counter?: boolean;
+    description?: ReactNode;
     wrapperClassName?: string;
     containerClassName?: string;
     headerClassName?: string;
     textareaClassName?: string;
-    footerClassName?: string;
-    label?: ReactNode;
-    caption?: ReactNode;
-    counter?: boolean;
+    descriptionClassName?: string;
   };
 
 export const MTextarea = ({
   status = 'regular',
   children,
-  header,
-  footer,
+  label,
+  caption,
+  counter,
+  description,
   wrapperClassName,
   containerClassName,
   headerClassName,
   textareaClassName,
-  footerClassName,
-  label,
-  caption,
-  counter,
+  descriptionClassName,
   maxLength = 200,
   id,
   rows = 3,
@@ -70,11 +68,6 @@ export const MTextarea = ({
       gap="m"
       className={clsx(styles.textareaWrapper, styles[status], wrapperClassName)}
     >
-      {header && (
-        <div className={clsx(styles.textareaHeader, headerClassName)}>
-          {header}
-        </div>
-      )}
       <div className={clsx(styles.textareaLabel)}>
         <MFlex justify="space-between">
           {label && (
@@ -107,9 +100,9 @@ export const MTextarea = ({
           </span>
         )}
       </MFlex>
-      {footer && (
-        <div className={clsx(styles.textareaFooter, footerClassName)}>
-          <MFieldDescription status={status}>{footer}</MFieldDescription>
+      {description && (
+        <div className={clsx(styles.textareaDescription, descriptionClassName)}>
+          <MFieldDescription status={status}>{description}</MFieldDescription>
         </div>
       )}
     </MFlex>

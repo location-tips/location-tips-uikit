@@ -14,7 +14,7 @@ export default meta;
 
 type Story = StoryObj<typeof MTextarea>;
 
-const textareaFooter = () => (
+const textareaDesc = () => (
   <MFlex>
     <MIconCamera mode="regular" width={20}></MIconCamera> Assistive text
   </MFlex>
@@ -38,8 +38,7 @@ export const Regular: Story = {
     counter: true,
     maxLength: 200,
     placeholder: 'Text area',
-    header: 'Foo bar',
-    footer: textareaFooter(),
+    description: textareaDesc(),
     label: 'Textarea label',
     caption: 'Textarea caption',
   },
@@ -53,8 +52,7 @@ export const Valid: Story = {
     counter: true,
     maxLength: 200,
     placeholder: 'Text area',
-    header: 'Foo bar',
-    footer: textareaFooter(),
+    description: textareaDesc(),
     label: 'Textarea label',
     caption: 'Textarea caption',
   },
@@ -68,8 +66,7 @@ export const Invalid: Story = {
     counter: true,
     maxLength: 200,
     placeholder: 'Text area',
-    header: 'Foo bar',
-    footer: textareaFooter(),
+    description: textareaDesc(),
     label: 'Textarea label',
     caption: 'Textarea caption',
   },
@@ -83,8 +80,7 @@ export const Disabled: Story = {
     counter: true,
     maxLength: 200,
     placeholder: 'Text area',
-    header: 'Foo bar',
-    footer: textareaFooter(),
+    description: textareaDesc(),
     label: 'Textarea label',
     caption: 'Textarea caption',
   },
