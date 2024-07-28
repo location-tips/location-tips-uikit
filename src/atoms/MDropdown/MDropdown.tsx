@@ -31,18 +31,22 @@ export const MDropdown = ({
   return (
     <div className={clsx(styles.dropdownContainer)} {...props}>
       {children}
-      <MCard
-        noPadding={noPadding}
-        className={clsx(
-          styles.dropdown,
-          { [styles.open]: open },
-          [styles[position], styles[align]],
-          { [styles.stretch]: stretch },
-          dropdownContentClassName
-        )}
+      <div
+        className={clsx(styles.dropdown, { [styles.open]: open }, [
+          styles[position],
+          styles[align],
+        ])}
       >
-        {dropdownContent}
-      </MCard>
+        <MCard
+          noPadding={noPadding}
+          className={clsx(
+            { [styles.stretch]: stretch },
+            dropdownContentClassName
+          )}
+        >
+          {dropdownContent}
+        </MCard>
+      </div>
     </div>
   );
 };
