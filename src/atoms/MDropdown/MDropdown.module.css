@@ -34,6 +34,6 @@
   width: 100%;
 }
 
-.open {
+.dropdown.open {
   display: block;
 }
