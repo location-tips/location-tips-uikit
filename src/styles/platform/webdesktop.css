@@ -71,6 +71,18 @@
   --gallery-slider-button-margin: var(--size-general-1_5x);
   --gallery-tool-margin: var(--size-general-1_5x);
 
+  /* card radius */
+  --border-radius-none: 0;
+  --border-radius-default: var(--borderRadius-general-1x);
+  --border-radius-xs: var(--borderRadius-general-_5x);
+  --border-radius-s: var(--borderRadius-general-1x);
+  --border-radius-m: var(--borderRadius-general-1_5x);
+  --border-radius-l: var(--borderRadius-general-2x);
+  --border-radius-xl: var(--borderRadius-general-2_5x);
+  --border-radius-2xl: var(--borderRadius-general-3x);
+  --border-radius-3xl: var(--borderRadius-general-3_5x);
+  --border-radius-4xl: var(--borderRadius-general-4x);
+
   /* textarea */
   --textarea-font-size: var(--font-size-l);
   --textarea-counter-font-size: var(--font-size-s);
