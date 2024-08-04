@@ -76,7 +76,7 @@ export const MGallery = ({
   }, [touchStart, touchEnd]);
 
   return (
-    <MFlex direction="column" align="start" gap="m">
+    <MFlex direction="column" align="start" gap="m" style={{ maxWidth: width }}>
       {header && <div className={clsx(styles.header)}>{header}</div>}
 
       <div
