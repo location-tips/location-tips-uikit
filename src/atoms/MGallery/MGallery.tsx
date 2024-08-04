@@ -3,11 +3,11 @@ import MFlex from '../MFlex/MFlex';
 import clsx from 'clsx';
 import styles from './MGallery.module.css';
 import { MButton } from '../MButton/MButton';
-import { MIconCaretLeft } from '../MIcon/icons/MIconCaretLeft';
-import { MIconCaretRight } from '../MIcon/icons/MIconCaretRight';
 
 type MGalleryProps = {
   slides: ReactNode[];
+  prevButton?: ReactNode;
+  nextButton?: ReactNode;
   header?: ReactNode[];
   footer?: ReactNode[];
   tools?: ReactNode[];
@@ -17,6 +17,8 @@ type MGalleryProps = {
 
 export const MGallery = ({
   slides,
+  prevButton = '<',
+  nextButton = '>',
   header,
   footer,
   tools,
@@ -74,7 +76,7 @@ export const MGallery = ({
   }, [touchStart, touchEnd]);
 
   return (
-    <MFlex direction="column" align="start" gap="m">
+    <MFlex direction="column" align="start" gap="m" style={{ maxWidth: width }}>
       {header && <div className={clsx(styles.header)}>{header}</div>}
 
       <div
@@ -102,7 +104,7 @@ export const MGallery = ({
             mode="round"
             onClick={prevSlide}
           >
-            <MIconCaretLeft mode="regular" width={32} />
+            {prevButton}
           </MButton>
         )}
         {currentIndex < slides.length - 1 && (
@@ -114,7 +116,7 @@ export const MGallery = ({
             mode="round"
             onClick={nextSlide}
           >
-            <MIconCaretRight mode="regular" width={32} />
+            {nextButton}
           </MButton>
         )}
         {tools && <div className={clsx(styles.tools)}>{tools}</div>}
