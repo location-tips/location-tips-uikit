@@ -11,8 +11,7 @@ type MGalleryProps = {
   header?: ReactNode[];
   footer?: ReactNode[];
   tools?: ReactNode[];
-  width?: number;
-  height?: number;
+  currentSlide?: number;
 };
 
 export const MGallery = ({
@@ -22,10 +21,11 @@ export const MGallery = ({
   header,
   footer,
   tools,
-  width = 200,
-  height = 200,
+  currentSlide = 0,
 }: MGalleryProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(
+    Math.max(0, Math.min(slides.length - 1, currentSlide))
+  );
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -61,6 +61,10 @@ export const MGallery = ({
   };
 
   useEffect(() => {
+    setCurrentIndex(Math.max(0, Math.min(slides.length - 1, currentSlide)));
+  }, [currentSlide, slides]);
+
+  useEffect(() => {
     const slider = sliderRef.current;
     if (slider) {
       slider.addEventListener('touchstart', handleTouchStart);
@@ -76,17 +80,14 @@ export const MGallery = ({
   }, [touchStart, touchEnd]);
 
   return (
-    <MFlex direction="column" align="start" gap="m" style={{ maxWidth: width }}>
+    <MFlex direction="column" align="start" gap="m">
       {header && <div className={clsx(styles.header)}>{header}</div>}
 
-      <div
-        className={clsx(styles.slider__container)}
-        style={{ width: width, height: height }}
-      >
+      <div className={clsx(styles.slider__container)}>
         <div
           ref={sliderRef}
           className={clsx(styles.slider)}
-          style={{ transform: `translateX(-${currentIndex * width}px)` }}
+          style={{ transform: `translateX(calc(-1 * ${currentIndex} * 100%))` }}
         >
           {slides.map((slide, index) => (
             <div key={index} className={clsx(styles.slider__slide)}>
