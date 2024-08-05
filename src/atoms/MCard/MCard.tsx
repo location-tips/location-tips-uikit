@@ -1,4 +1,9 @@
-import React, { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
+import React, {
+  DetailedHTMLProps,
+  forwardRef,
+  HTMLAttributes,
+  ReactNode,
+} from 'react';
 import clsx from 'clsx';
 import MHeading from '../MHeading/MHeading';
 import style from './MCard.module.css';
@@ -47,75 +52,81 @@ type CardProps = DetailedHTMLProps<
   collapsed?: boolean;
 };
 
-export const MCard = ({
-  header,
-  footer,
-  className,
-  children,
-  headerClassName,
-  contentClassName,
-  footerClassName,
-  showHeaderDivider = false,
-  showFooterDivider = false,
-  noPadding = false,
-  borderLeftBottomRadius = 'l',
-  borderLeftTopRadius = 'l',
-  borderRightBottomRadius = 'l',
-  borderRightTopRadius = 'l',
-  shadow = true,
-  collapsed = false,
-  ...htmlProps
-}: CardProps) => {
-  return (
-    <MFlex
-      direction="column"
-      gap="l"
-      justify="stretch"
-      align="start"
-      className={clsx(
-        style.card,
-        {
-          [style.shadow]: shadow,
-          [style.noPadding]: noPadding,
-        },
-        style[`borderLeftBottomRadius_${borderLeftBottomRadius}`],
-        style[`borderLeftTopRadius_${borderLeftTopRadius}`],
-        style[`borderRightBottomRadius_${borderRightBottomRadius}`],
-        style[`borderRightTopRadius_${borderRightTopRadius}`],
-        className
-      )}
-      {...htmlProps}
-    >
-      {header && (
-        <header className={clsx(style.header, headerClassName)}>
-          <MFlex direction="column" justify="end" gap="l" align="stretch">
-            {typeof header === 'string' ? (
-              <MHeading mode="h3">{header}</MHeading>
-            ) : (
-              header
-            )}
-
-            {showHeaderDivider && !collapsed && <MDivider />}
-          </MFlex>
-        </header>
-      )}
-      <div
-        className={clsx(style.content, contentClassName, {
-          [style.collapsed]: collapsed,
-        })}
+export const MCard = forwardRef<HTMLDivElement, CardProps>(
+  (
+    {
+      header,
+      footer,
+      className,
+      children,
+      headerClassName,
+      contentClassName,
+      footerClassName,
+      showHeaderDivider = false,
+      showFooterDivider = false,
+      noPadding = false,
+      borderLeftBottomRadius = 'l',
+      borderLeftTopRadius = 'l',
+      borderRightBottomRadius = 'l',
+      borderRightTopRadius = 'l',
+      shadow = true,
+      collapsed = false,
+      ...htmlProps
+    }: CardProps,
+    ref
+  ) => {
+    return (
+      <MFlex
+        ref={ref}
+        direction="column"
+        gap="l"
+        justify="stretch"
+        align="start"
+        className={clsx(
+          style.card,
+          {
+            [style.shadow]: shadow,
+            [style.noPadding]: noPadding,
+          },
+          style[`borderLeftBottomRadius_${borderLeftBottomRadius}`],
+          style[`borderLeftTopRadius_${borderLeftTopRadius}`],
+          style[`borderRightBottomRadius_${borderRightBottomRadius}`],
+          style[`borderRightTopRadius_${borderRightTopRadius}`],
+          className
+        )}
+        {...htmlProps}
       >
-        {children}
-      </div>
-      {footer && (
-        <footer className={clsx(style.footer, footerClassName)}>
-          <MFlex direction="column" justify="end" gap="l" align="stretch">
-            {showFooterDivider && <MDivider />}
-            {footer}
-          </MFlex>
-        </footer>
-      )}
-    </MFlex>
-  );
-};
+        {header && (
+          <header className={clsx(style.header, headerClassName)}>
+            <MFlex direction="column" justify="end" gap="l" align="stretch">
+              {typeof header === 'string' ? (
+                <MHeading mode="h3">{header}</MHeading>
+              ) : (
+                header
+              )}
+
+              {showHeaderDivider && !collapsed && <MDivider />}
+            </MFlex>
+          </header>
+        )}
+        <div
+          className={clsx(style.content, contentClassName, {
+            [style.collapsed]: collapsed,
+          })}
+        >
+          {children}
+        </div>
+        {footer && (
+          <footer className={clsx(style.footer, footerClassName)}>
+            <MFlex direction="column" justify="end" gap="l" align="stretch">
+              {showFooterDivider && <MDivider />}
+              {footer}
+            </MFlex>
+          </footer>
+        )}
+      </MFlex>
+    );
+  }
+);
 
 export default MCard;
