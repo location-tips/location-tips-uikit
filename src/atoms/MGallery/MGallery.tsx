@@ -12,6 +12,7 @@ type MGalleryProps = {
   footer?: ReactNode[];
   tools?: ReactNode[];
   currentSlide?: number;
+  className?: string;
 };
 
 export const MGallery = ({
@@ -22,6 +23,7 @@ export const MGallery = ({
   footer,
   tools,
   currentSlide = 0,
+  className,
 }: MGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(
     Math.max(0, Math.min(slides.length - 1, currentSlide))
@@ -80,7 +82,12 @@ export const MGallery = ({
   }, [touchStart, touchEnd]);
 
   return (
-    <MFlex direction="column" align="start" gap="m">
+    <MFlex
+      direction="column"
+      align="start"
+      gap="m"
+      className={clsx(styles.wrapper, className)}
+    >
       {header && <div className={clsx(styles.header)}>{header}</div>}
 
       <div className={clsx(styles.slider__container)}>
