@@ -1,4 +1,4 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react';
+import React, { DetailedHTMLProps, forwardRef, HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import styles from './MFlex.module.css';
 
@@ -19,32 +19,38 @@ type MFlexProps = DetailedHTMLProps<
   wrap?: 'wrap' | 'nowrap';
 };
 
-export const MFlex = ({
-  children,
-  className,
-  style = {},
-  gap = 's',
-  direction = 'row',
-  align = 'center',
-  justify = 'start',
-  wrap = 'wrap',
-  ...restProps
-}: MFlexProps) => {
-  return (
-    <div
-      className={clsx(styles.flex, styles[`flex-gap-${gap}`], className)}
-      style={{
-        flexDirection: direction,
-        alignItems: align,
-        justifyContent: justify,
-        flexWrap: wrap,
-        ...style,
-      }}
-      {...restProps}
-    >
-      {children}
-    </div>
-  );
-};
+export const MFlex = forwardRef<HTMLDivElement, MFlexProps>(
+  (
+    {
+      children,
+      className,
+      style = {},
+      gap = 's',
+      direction = 'row',
+      align = 'center',
+      justify = 'start',
+      wrap = 'wrap',
+      ...restProps
+    }: MFlexProps,
+    ref
+  ) => {
+    return (
+      <div
+        className={clsx(styles.flex, styles[`flex-gap-${gap}`], className)}
+        style={{
+          flexDirection: direction,
+          alignItems: align,
+          justifyContent: justify,
+          flexWrap: wrap,
+          ...style,
+        }}
+        {...restProps}
+        ref={ref}
+      >
+        {children}
+      </div>
+    );
+  }
+);
 
 export default MFlex;
