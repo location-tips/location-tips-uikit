@@ -6,7 +6,9 @@ import { MButton } from '../MButton/MButton';
 
 type MGalleryProps = {
   slides: ReactNode[];
+  prevButtonClassName?: string;
   prevButton?: ReactNode;
+  nextButtonClassName?: string;
   nextButton?: ReactNode;
   header?: ReactNode[];
   footer?: ReactNode[];
@@ -17,7 +19,9 @@ type MGalleryProps = {
 
 export const MGallery = ({
   slides,
+  prevButtonClassName,
   prevButton = '<',
+  nextButtonClassName,
   nextButton = '>',
   header,
   footer,
@@ -104,10 +108,10 @@ export const MGallery = ({
         </div>
         {currentIndex > 0 && (
           <MButton
-            className={clsx([
-              styles.slider__button,
-              styles.slider__button_left,
-            ])}
+            className={clsx(
+              [styles.slider__button, styles.slider__button_left],
+              prevButtonClassName
+            )}
             disabled={currentIndex === 0 ? true : false}
             mode="round"
             onClick={prevSlide}
@@ -117,10 +121,10 @@ export const MGallery = ({
         )}
         {currentIndex < slides.length - 1 && (
           <MButton
-            className={clsx([
-              styles.slider__button,
-              styles.slider__button_right,
-            ])}
+            className={clsx(
+              [styles.slider__button, styles.slider__button_right],
+              nextButtonClassName
+            )}
             mode="round"
             onClick={nextSlide}
           >
