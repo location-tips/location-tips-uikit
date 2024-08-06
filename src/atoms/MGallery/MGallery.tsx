@@ -15,6 +15,7 @@ type MGalleryProps = {
   tools?: ReactNode[];
   currentSlide?: number;
   className?: string;
+  onSlideChange?: (index: number) => void;
 };
 
 export const MGallery = ({
@@ -28,6 +29,7 @@ export const MGallery = ({
   tools,
   currentSlide = 0,
   className,
+  onSlideChange,
 }: MGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(
     Math.max(0, Math.min(slides.length - 1, currentSlide))
@@ -69,6 +71,10 @@ export const MGallery = ({
   useEffect(() => {
     setCurrentIndex(Math.max(0, Math.min(slides.length - 1, currentSlide)));
   }, [currentSlide, slides]);
+
+  useEffect(() => {
+    currentIndex != currentSlide && onSlideChange?.(currentIndex);
+  }, [currentIndex, currentSlide]);
 
   useEffect(() => {
     const slider = sliderRef.current;
