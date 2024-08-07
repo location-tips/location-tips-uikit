@@ -73,8 +73,8 @@ export const MGallery = ({
   }, [currentSlide, slides]);
 
   useEffect(() => {
-    currentIndex != currentSlide && onSlideChange?.(currentIndex);
-  }, [currentIndex, currentSlide]);
+    onSlideChange?.(currentIndex);
+  }, [currentIndex]);
 
   useEffect(() => {
     const slider = sliderRef.current;
