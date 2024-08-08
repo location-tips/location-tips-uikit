@@ -7,50 +7,51 @@ import React, {
 import clsx from 'clsx';
 import MHeading from '../MHeading/MHeading';
 import style from './MCard.module.css';
-import MFlex from '../MFlex/MFlex';
+import MFlex, { type MFlexProps } from '../MFlex/MFlex';
 import MDivider from '../MDivider/MDivider';
 import { TComponentSize } from '../../types/TComponentSize';
 
 type CardProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
-> & {
-  header?: ReactNode;
-  footer?: ReactNode;
-  headerClassName?: string;
-  contentClassName?: string;
-  footerClassName?: string;
-  showHeaderDivider?: boolean;
-  showFooterDivider?: boolean;
-  noPadding?: boolean;
-  borderLeftTopRadius?:
-    | Extract<
-        TComponentSize['size'],
-        's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
-      >
-    | 'none';
-  borderRightTopRadius?:
-    | Extract<
-        TComponentSize['size'],
-        's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
-      >
-    | 'none';
-  borderLeftBottomRadius?:
-    | Extract<
-        TComponentSize['size'],
-        's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
-      >
-    | 'none';
-  borderRightBottomRadius?:
-    | Extract<
-        TComponentSize['size'],
-        's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
-      >
-    | 'none';
-  onClick?: () => void;
-  shadow?: boolean;
-  collapsed?: boolean;
-};
+> &
+  MFlexProps & {
+    header?: ReactNode;
+    footer?: ReactNode;
+    headerClassName?: string;
+    contentClassName?: string;
+    footerClassName?: string;
+    showHeaderDivider?: boolean;
+    showFooterDivider?: boolean;
+    noPadding?: boolean;
+    borderLeftTopRadius?:
+      | Extract<
+          TComponentSize['size'],
+          's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
+        >
+      | 'none';
+    borderRightTopRadius?:
+      | Extract<
+          TComponentSize['size'],
+          's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
+        >
+      | 'none';
+    borderLeftBottomRadius?:
+      | Extract<
+          TComponentSize['size'],
+          's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
+        >
+      | 'none';
+    borderRightBottomRadius?:
+      | Extract<
+          TComponentSize['size'],
+          's' | 'm' | 'l' | 'xl' | '2xl' | '3xl' | '4xl'
+        >
+      | 'none';
+    onClick?: () => void;
+    shadow?: boolean;
+    collapsed?: boolean;
+  };
 
 export const MCard = forwardRef<HTMLDivElement, CardProps>(
   (
@@ -71,6 +72,10 @@ export const MCard = forwardRef<HTMLDivElement, CardProps>(
       borderRightTopRadius = 'l',
       shadow = true,
       collapsed = false,
+      direction = 'column',
+      gap = 'l',
+      justify = 'stretch',
+      align = 'start',
       ...htmlProps
     }: CardProps,
     ref
@@ -78,10 +83,10 @@ export const MCard = forwardRef<HTMLDivElement, CardProps>(
     return (
       <MFlex
         ref={ref}
-        direction="column"
-        gap="l"
-        justify="stretch"
-        align="start"
+        direction={direction}
+        gap={gap}
+        justify={justify}
+        align={align}
         className={clsx(
           style.card,
           {

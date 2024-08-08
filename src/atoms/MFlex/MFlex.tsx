@@ -2,7 +2,7 @@ import React, { DetailedHTMLProps, forwardRef, HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import styles from './MFlex.module.css';
 
-type MFlexProps = DetailedHTMLProps<
+export type MFlexProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > & {

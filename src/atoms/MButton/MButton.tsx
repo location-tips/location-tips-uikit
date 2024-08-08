@@ -38,12 +38,12 @@ export const MButton = ({
     <button
       className={clsx(
         styles.button,
-        className,
         styles[mode],
         {
           [styles.stretch]: stretch,
         },
-        styles[size]
+        styles[size],
+        className
       )}
       {...restProps}
     >
