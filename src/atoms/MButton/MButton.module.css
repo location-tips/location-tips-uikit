@@ -209,8 +209,7 @@
 
 .primary.s,
 .secondary.s,
-.outlined.s,
-.transparent.s {
+.outlined.s {
   padding: var(--button-padding-vertical-s, 6px)
     var(--button-padding-horizontal-s, 12px);
   font-size: var(--button-font-size-small, 14px);
@@ -218,8 +217,7 @@
 
 .primary.m,
 .secondary.m,
-.outlined.m,
-.transparent.m {
+.outlined.m {
   padding: var(--button-padding-vertical-m, 8px)
     var(--button-padding-horizontal-m, 16px);
   font-size: var(--button-font-size-medium, 14px);
@@ -227,8 +225,7 @@
 
 .primary.l,
 .secondary.l,
-.outlined.l,
-.transparent.l {
+.outlined.l {
   padding: var(--button-padding-vertical-l, 10px)
     var(--button-padding-horizontal-l, 16px);
   font-size: var(--button-font-size-default, 16px);
