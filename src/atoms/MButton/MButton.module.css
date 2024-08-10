@@ -215,6 +215,10 @@
   font-size: var(--button-font-size-small, 14px);
 }
 
+.transparent.s {
+  font-size: var(--button-font-size-small, 14px);
+}
+
 .primary.m,
 .secondary.m,
 .outlined.m {
@@ -223,11 +227,19 @@
   font-size: var(--button-font-size-medium, 14px);
 }
 
+.transparent.m {
+  font-size: var(--button-font-size-medium, 14px);
+}
+
 .primary.l,
 .secondary.l,
 .outlined.l {
   padding: var(--button-padding-vertical-l, 10px)
     var(--button-padding-horizontal-l, 16px);
+  font-size: var(--button-font-size-default, 16px);
+}
+
+.transparent.l {
   font-size: var(--button-font-size-default, 16px);
 }
 
