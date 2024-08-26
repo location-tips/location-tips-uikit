@@ -68,16 +68,18 @@ export const MTextarea = ({
       gap="m"
       className={clsx(styles.textareaWrapper, styles[status], wrapperClassName)}
     >
-      <div className={clsx(styles.textareaLabel)}>
-        <MFlex justify="space-between">
-          {label && (
-            <MLabel htmlFor={textareaId} status={status}>
-              {label}
-            </MLabel>
-          )}
-          {caption && <MCaption status={status}>{caption}</MCaption>}
-        </MFlex>
-      </div>
+      {(label || caption) && (
+        <div className={clsx(styles.textareaLabel)}>
+          <MFlex justify="space-between">
+            {label && (
+              <MLabel htmlFor={textareaId} status={status}>
+                {label}
+              </MLabel>
+            )}
+            {caption && <MCaption status={status}>{caption}</MCaption>}
+          </MFlex>
+        </div>
+      )}
       <MFlex
         className={clsx(
           styles.textareaContainer,

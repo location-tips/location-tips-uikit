@@ -55,17 +55,19 @@ export const MInput = ({
       align="start"
       className={clsx(styles.inputWrapper, styles[status], wrapperClassName)}
     >
-      <MFlex
-        justify="space-between"
-        className={clsx(styles.inputHeading, headingClassName)}
-      >
-        {label && (
-          <MLabel htmlFor={fieldId} status={status}>
-            {label}
-          </MLabel>
-        )}
-        {caption && <MCaption status={status}>{caption}</MCaption>}
-      </MFlex>
+      {(label || caption) && (
+        <MFlex
+          justify="space-between"
+          className={clsx(styles.inputHeading, headingClassName)}
+        >
+          {label && (
+            <MLabel htmlFor={fieldId} status={status}>
+              {label}
+            </MLabel>
+          )}
+          {caption && <MCaption status={status}>{caption}</MCaption>}
+        </MFlex>
+      )}
       <MFlex className={clsx(styles.inputContainer, containerClassName)}>
         {before && (
           <MFlex align="center" className={styles.before}>
@@ -83,11 +85,11 @@ export const MInput = ({
           </MFlex>
         )}
       </MFlex>
-      <div className={footerClassName}>
-        {description && (
+      {description && (
+        <div className={footerClassName}>
           <MFieldDescription status={status}>{description}</MFieldDescription>
-        )}
-      </div>
+        </div>
+      )}
     </MFlex>
   );
 };

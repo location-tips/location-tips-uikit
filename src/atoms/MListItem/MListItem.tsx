@@ -7,17 +7,20 @@ export type ListItemProps = DetailedHTMLProps<
   HTMLLIElement
 > & {
   showDivider?: boolean;
+  noPadding?: boolean;
 };
 export const MListItem = ({
   children,
   className,
   showDivider,
+  noPadding = false,
   ...props
 }: ListItemProps) => {
   return (
     <li
       className={clsx(styles.item, className, {
         [styles.itemBorder]: showDivider,
+        [styles.noPadding]: noPadding,
       })}
       {...props}
     >
