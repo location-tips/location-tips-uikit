@@ -1,6 +1,6 @@
 {
   "name": "@location-tips/location-tips-uikit",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "main": "./index.js",
   "module": "./index.js",
   "typings": "./globals.d.ts",
