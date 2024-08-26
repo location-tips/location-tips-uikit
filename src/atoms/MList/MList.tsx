@@ -10,17 +10,20 @@ export type SelectOption = ListItemProps & {
 type ListComponentProps = {
   options?: SelectOption[];
   showDivider?: boolean;
+  noPadding?: boolean;
   onChoose?: (option: SelectOption) => void;
 };
 export const MList = ({
   options = [],
   showDivider = false,
   onChoose,
+  noPadding = false,
 }: ListComponentProps) => {
   return (
     <ul className={styles.listItems}>
       {options.map(({ key, ...option }) => (
         <MListItem
+          noPadding={noPadding}
           key={key}
           onClick={() => onChoose?.({ key, ...option })}
           {...option}
