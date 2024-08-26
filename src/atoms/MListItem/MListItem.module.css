@@ -5,6 +5,32 @@
   cursor: pointer;
 }
 
+.item.noPadding {
+  padding: 0;
+}
+
+.item.noPadding:first-child:hover {
+  border-top-left-radius: var(
+    --button-outlined-medium-borderRadius-default,
+    10px
+  );
+  border-top-right-radius: var(
+    --button-outlined-medium-borderRadius-default,
+    10px
+  );
+}
+
+.item.noPadding:last-child:hover {
+  border-bottom-left-radius: var(
+    --button-outlined-medium-borderRadius-default,
+    10px
+  );
+  border-bottom-right-radius: var(
+    --button-outlined-medium-borderRadius-default,
+    10px
+  );
+}
+
 .itemBorder {
   border-bottom: 1px solid var(--divider-color, #eeeeee);
 }
