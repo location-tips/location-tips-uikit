@@ -6,6 +6,7 @@ import React, {
   useMemo,
   useRef,
   useState,
+  useEffect,
 } from 'react';
 import clsx from 'clsx';
 import { TComponentStatus } from '../../types/TComponentStatus';
@@ -60,6 +61,10 @@ export const MTextarea = ({
       setCount(textarea.current.value.length);
     }
   };
+
+  useEffect(() => {
+    updateCount();
+  }, []);
 
   return (
     <MFlex
