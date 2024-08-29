@@ -1,0 +1,30 @@
+.expandableText {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  transition: max-height 0.3s ease-out;
+}
+
+.blurOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    transparent,
+    var(--expandable-text-overlay-background, #fff)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.collapseButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}

@@ -216,4 +216,6 @@
   --badge-primary-background-color: var(--palette-gray-4);
   /* textarea */
   --textarea-scrollbar-color: var(--palette-gray-3);
+  /* expandable-text */
+  --expandable-text-overlay-background: var(--palette-white, #fff);
 }
