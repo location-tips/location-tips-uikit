@@ -18,8 +18,8 @@ type MExpandableTextProps = DetailedHTMLProps<
   visibleLines?: number;
   lineHeight?: number;
   defaultExpanded?: boolean;
-  expandButton?: ReactNode;
-  collapseButton?: ReactNode;
+  expandButtonContent?: ReactNode;
+  collapseButtonContent?: ReactNode;
 };
 
 export const MExpandableText = ({
@@ -27,12 +27,14 @@ export const MExpandableText = ({
   visibleLines = 2,
   lineHeight = 20,
   defaultExpanded = false,
-  expandButton,
-  collapseButton,
+  expandButtonContent,
+  collapseButtonContent,
   ...restProps
 }: MExpandableTextProps) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
-  const [maxHeight, setMaxHeight] = useState<string | undefined>(undefined);
+  const [maxHeight, setMaxHeight] = useState<string>(
+    `${lineHeight * visibleLines}px`
+  );
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -75,11 +77,13 @@ export const MExpandableText = ({
       </div>
       {!isExpanded ? (
         <MButton size="m" mode="transparent" onClick={toggleExpand}>
-          {expandButton ?? <span className={styles.defaultButton}>Expand</span>}
+          {expandButtonContent ?? (
+            <span className={styles.defaultButton}>Expand</span>
+          )}
         </MButton>
       ) : (
         <MButton size="m" onClick={toggleExpand} mode="transparent">
-          {collapseButton ?? (
+          {collapseButtonContent ?? (
             <span className={styles.defaultButton}>Collapse</span>
           )}
         </MButton>
