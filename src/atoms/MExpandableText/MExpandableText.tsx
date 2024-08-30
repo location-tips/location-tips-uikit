@@ -13,7 +13,6 @@ type MExpandableTextProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > & {
-  children: ReactNode;
   visibleLines?: number;
   lineHeight?: number;
   expanded?: boolean;
