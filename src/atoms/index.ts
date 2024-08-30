@@ -19,4 +19,5 @@ export { MListItem } from './MListItem';
 export { MFieldDescription } from './MFieldDescription';
 export { MThemeSelector } from './MThemeSelector';
 export { MTheme } from './MTheme';
+export { MExpandableText } from './MExpandableText';
 // export * from './MIcon';

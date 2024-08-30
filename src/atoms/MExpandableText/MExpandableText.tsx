@@ -19,7 +19,7 @@ type MExpandableTextProps = DetailedHTMLProps<
   collapseButton?: ReactNode;
 };
 
-const MExpandableText = ({
+export const MExpandableText = ({
   children,
   visibleLines = 2,
   lineHeight = 20,
