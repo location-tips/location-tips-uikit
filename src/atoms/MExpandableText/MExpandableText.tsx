@@ -8,6 +8,8 @@ import React, {
 } from 'react';
 import clsx from 'clsx';
 import styles from './MExpandalbleText.module.css';
+import { MButton } from '../MButton/MButton';
+import { MFlex } from '../MFlex/MFlex';
 
 type MExpandableTextProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
@@ -15,7 +17,8 @@ type MExpandableTextProps = DetailedHTMLProps<
 > & {
   visibleLines?: number;
   lineHeight?: number;
-  expanded?: boolean;
+  defaultExpanded?: boolean;
+  expandButton?: ReactNode;
   collapseButton?: ReactNode;
 };
 
@@ -23,11 +26,12 @@ export const MExpandableText = ({
   children,
   visibleLines = 2,
   lineHeight = 20,
-  expanded = false,
-  collapseButton = '△ Collapse',
+  defaultExpanded = false,
+  expandButton,
+  collapseButton,
   ...restProps
 }: MExpandableTextProps) => {
-  const [isExpanded, setIsExpanded] = useState(expanded);
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
   const [maxHeight, setMaxHeight] = useState<string | undefined>(undefined);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -43,42 +47,44 @@ export const MExpandableText = ({
   };
 
   return (
-    <div className={clsx(styles.expandableText)}>
-      <div
-        ref={contentRef}
-        className={styles.content}
-        style={{
-          maxHeight: isExpanded
-            ? `${contentRef.current?.scrollHeight}px`
-            : maxHeight,
-          lineHeight: `${lineHeight}px`,
-          transition: 'max-height 0.3s ease-in-out',
-        }}
-        {...restProps}
-      >
-        {children}
+    <MFlex direction="column" gap="s" align="center">
+      <div className={clsx(styles.expandableText)}>
+        <div
+          ref={contentRef}
+          className={styles.content}
+          style={{
+            maxHeight: isExpanded
+              ? `${contentRef.current?.scrollHeight}px`
+              : maxHeight,
+            lineHeight: `${lineHeight}px`,
+            transition: 'max-height 0.3s ease-in-out',
+          }}
+          {...restProps}
+        >
+          {children}
+        </div>
+        {!isExpanded && (
+          <div
+            style={{
+              height: `${lineHeight}px`,
+              transition: 'opacity 0.3s ease-in-out',
+            }}
+            className={styles.blurOverlay}
+          ></div>
+        )}
       </div>
       {!isExpanded ? (
-        <div
-          style={{
-            height: `${lineHeight}px`,
-            transition: 'opacity 0.3s ease-in-out',
-          }}
-          className={styles.blurOverlay}
-          onClick={toggleExpand}
-        ></div>
+        <MButton size="m" mode="transparent" onClick={toggleExpand}>
+          {expandButton ?? <span className={styles.defaultButton}>Expand</span>}
+        </MButton>
       ) : (
-        <span
-          className={styles.collapseButton}
-          onClick={toggleExpand}
-          style={{
-            transition: 'opacity 0.3s ease-in-out',
-          }}
-        >
-          {collapseButton}
-        </span>
+        <MButton size="m" onClick={toggleExpand} mode="transparent">
+          {collapseButton ?? (
+            <span className={styles.defaultButton}>Collapse</span>
+          )}
+        </MButton>
       )}
-    </div>
+    </MFlex>
   );
 };
 

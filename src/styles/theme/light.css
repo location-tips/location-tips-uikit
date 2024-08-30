@@ -218,4 +218,5 @@
   --textarea-scrollbar-color: var(--palette-gray-3);
   /* expandable-text */
   --expandable-text-overlay-background: var(--palette-white, #fff);
+  --expandable-text-default-button-color: var(--palette-gray-2, #747e97);
 }
