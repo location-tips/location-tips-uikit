@@ -1,9 +1,19 @@
-import React, { useState, useRef, useEffect, ReactNode } from 'react';
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  ReactNode,
+  DetailedHTMLProps,
+  HTMLAttributes,
+} from 'react';
 import clsx from 'clsx';
 import styles from './MExpandalbleText.module.css';
 
-type MExpandableTextProps = {
-  text: string;
+type MExpandableTextProps = DetailedHTMLProps<
+  HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> & {
+  children: ReactNode;
   visibleLines?: number;
   lineHeight?: number;
   expanded?: boolean;
@@ -11,11 +21,12 @@ type MExpandableTextProps = {
 };
 
 const MExpandableText = ({
-  text,
+  children,
   visibleLines = 2,
-  lineHeight,
+  lineHeight = 20,
   expanded = false,
   collapseButton = '△ Collapse',
+  ...restProps
 }: MExpandableTextProps) => {
   const [isExpanded, setIsExpanded] = useState(expanded);
   const [maxHeight, setMaxHeight] = useState<string | undefined>(undefined);
@@ -23,40 +34,48 @@ const MExpandableText = ({
 
   useEffect(() => {
     if (contentRef.current) {
-      const computedlineHeight = lineHeight || 20;
-      const calculatedMaxHeight = `${computedlineHeight * visibleLines}px`;
+      const calculatedMaxHeight = `${lineHeight * visibleLines}px`;
       setMaxHeight(calculatedMaxHeight);
     }
-  }, [visibleLines]);
+  }, [visibleLines, lineHeight]);
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
 
   return (
-    <div
-      className={clsx(styles.expandableText, {
-        [styles.expanded]: isExpanded,
-      })}
-    >
+    <div className={clsx(styles.expandableText)}>
       <div
         ref={contentRef}
         className={styles.content}
         style={{
-          maxHeight: isExpanded ? 'none' : maxHeight,
-          lineHeight: lineHeight ? lineHeight + 'px' : 'normal',
+          maxHeight: isExpanded
+            ? `${contentRef.current?.scrollHeight}px`
+            : maxHeight,
+          lineHeight: `${lineHeight}px`,
+          transition: 'max-height 0.3s ease-in-out',
         }}
+        {...restProps}
       >
-        {text}
+        {children}
       </div>
       {!isExpanded ? (
         <div
-          style={{ height: `${lineHeight ? lineHeight : 20}px` }}
+          style={{
+            height: `${lineHeight}px`,
+            transition: 'opacity 0.3s ease-in-out',
+          }}
           className={styles.blurOverlay}
           onClick={toggleExpand}
         ></div>
       ) : (
-        <span className={styles.collapseButton} onClick={toggleExpand}>
+        <span
+          className={styles.collapseButton}
+          onClick={toggleExpand}
+          style={{
+            transition: 'opacity 0.3s ease-in-out',
+          }}
+        >
           {collapseButton}
         </span>
       )}
