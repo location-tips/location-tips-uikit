@@ -12,6 +12,9 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.defaultOverlayColor {
   background: linear-gradient(
     transparent,
     var(--expandable-text-overlay-background, #fff)

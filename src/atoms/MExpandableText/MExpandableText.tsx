@@ -20,6 +20,7 @@ type MExpandableTextProps = DetailedHTMLProps<
   defaultExpanded?: boolean;
   expandButtonContent?: ReactNode;
   collapseButtonContent?: ReactNode;
+  customOverlayColor?: string;
 };
 
 export const MExpandableText = ({
@@ -29,6 +30,7 @@ export const MExpandableText = ({
   defaultExpanded = false,
   expandButtonContent,
   collapseButtonContent,
+  customOverlayColor,
   ...restProps
 }: MExpandableTextProps) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
@@ -71,7 +73,9 @@ export const MExpandableText = ({
               height: `${lineHeight}px`,
               transition: 'opacity 0.3s ease-in-out',
             }}
-            className={styles.blurOverlay}
+            className={clsx(styles.blurOverlay, customOverlayColor, {
+              [styles.defaultOverlayColor]: !customOverlayColor,
+            })}
           ></div>
         )}
       </div>
