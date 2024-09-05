@@ -21,6 +21,10 @@
   );
 }
 
+.button {
+  padding: 0;
+}
+
 .defaultButton {
   color: var(--expandable-text-default-button-color, #747e97);
 }
