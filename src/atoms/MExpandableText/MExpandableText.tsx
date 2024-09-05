@@ -21,6 +21,8 @@ type MExpandableTextProps = DetailedHTMLProps<
   expandButtonContent?: ReactNode;
   collapseButtonContent?: ReactNode;
   customOverlayColor?: string;
+  showBlur: boolean;
+  buttonAlign: 'start' | 'center' | 'end';
 };
 
 export const MExpandableText = ({
@@ -31,6 +33,8 @@ export const MExpandableText = ({
   expandButtonContent,
   collapseButtonContent,
   customOverlayColor,
+  showBlur = false,
+  buttonAlign = 'center',
   ...restProps
 }: MExpandableTextProps) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
@@ -51,7 +55,7 @@ export const MExpandableText = ({
   };
 
   return (
-    <MFlex direction="column" gap="s" align="center">
+    <MFlex direction="column" gap="s" align={buttonAlign}>
       <div className={clsx(styles.expandableText)}>
         <div
           ref={contentRef}
@@ -67,7 +71,7 @@ export const MExpandableText = ({
         >
           {children}
         </div>
-        {!isExpanded && (
+        {!isExpanded && showBlur && (
           <div
             style={{
               height: `${lineHeight}px`,
@@ -80,13 +84,23 @@ export const MExpandableText = ({
         )}
       </div>
       {!isExpanded ? (
-        <MButton size="m" mode="transparent" onClick={toggleExpand}>
+        <MButton
+          size="m"
+          mode="transparent"
+          className={styles.button}
+          onClick={toggleExpand}
+        >
           {expandButtonContent ?? (
             <span className={styles.defaultButton}>Expand</span>
           )}
         </MButton>
       ) : (
-        <MButton size="m" onClick={toggleExpand} mode="transparent">
+        <MButton
+          size="m"
+          onClick={toggleExpand}
+          className={styles.button}
+          mode="transparent"
+        >
           {collapseButtonContent ?? (
             <span className={styles.defaultButton}>Collapse</span>
           )}
