@@ -21,8 +21,8 @@ type MExpandableTextProps = DetailedHTMLProps<
   expandButtonContent?: ReactNode;
   collapseButtonContent?: ReactNode;
   customOverlayColor?: string;
-  showBlur: boolean;
-  buttonAlign: 'start' | 'center' | 'end';
+  showBlur?: boolean;
+  buttonAlign?: 'start' | 'center' | 'end';
 };
 
 export const MExpandableText = ({
